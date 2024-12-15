@@ -1,0 +1,361 @@
+
+\documentclass{gist}
+
+
+\def\putepsf#1{\centering \parbox{14cm}{\epsfxsize = 14cm \epsfbox{#1}}}
+\usepackage{graphicx}
+
+\usepackage{amsmath, amssymb}
+
+% \usepackage{algorithm}
+% \usepackage{amsfonts}
+% \usepackage{algorithmic}
+\AtBeginEnvironment{algorithm}{\setstretch{1.0}}
+\usepackage[lofdepth=1]{subfig}
+\usepackage[rightcaption]{sidecap}
+\usepackage{multirow}
+\usepackage{makecell}
+% \usepackage{array}
+
+% yoon
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{etoolbox}
+\usepackage{url}
+
+\newcommand\etal{\textit{et~al.\ }}
+\newcommand\eg{\textit{e.g.\ }}
+\newcommand\ie{\textrm{i.e.\ }}
+\newcommand\R{\mathbb{R}}
+% yoon
+
+% \usepackage{theorem}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage{cite}
+\usepackage{csquotes}
+
+% \usepackage{color}
+% \usepackage{xcolor}
+% \makeatletter
+% \let\NAT@parse\undefined
+% \makeatother
+\usepackage[]{hyperref}
+% \hypersetup{
+%     bookmarksnumbered=true,
+%       linkbordercolor=blue,
+%       filebordercolor=red,
+%       citebordercolor = green,      
+%       urlbordercolor=red,
+%       %
+%       % colorlinks=true,
+%       % linkcolor=blue,
+%       % filecolor=blue,
+%       % citecolor = blue,      
+%       % urlcolor=cyan,
+% }
+
+\usepackage{bookmark}
+\bookmarksetup{numbered}
+
+\makeatletter
+\bookmarksetup{%
+  addtohook={%
+    \ifnum\toclevel@chapter=\bookmarkget{level}\relax
+      \renewcommand*{\numberline}[1]{CHAPTER #1 }%
+    \fi
+  },
+}
+\makeatother
+
+\usepackage{cleveref, autonum}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{assumption}{Assumption}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+%-----------------------------------------------------------------------
+% Department code list
+% IC - Information and Communications
+% IM - Information and Mechatronics
+% EC - Electric Engineering and Computer Science
+% MS - Materials Science and Engineering
+% ME - Mechatronics
+% EN - Earth Science and Environmental Engineering
+% LS - Life Science
+% PH - Physics and Photon Science
+% CH - Chemistry
+% NA - Nanobio Materials and Electronics
+% MD - Biomedical Science and Engineering
+% ET - Integrated Technology 에너지 융합 학제
+% CT - Integrated Technology 문화기술 융합 학제
+% RT - Integrated Technology 지능로봇프로그램
+
+% Department code
+%\code{{BS/}{EC}}
+%\code{{MS/}{EC}} % 학위와 소속 코드, 초록 페이지에 나타남
+\code{{MS/}{ME}}
+%-----------------------------------------------------------------------
+% Thesis title in English
+% Insert \titlebreak where lines are to be separated.  Do not use the LaTeX command '\\'.
+
+%\etitle{Study on Image Segmentation and Action Recognition in Computer Vision}
+
+\etitle{
+Constrained Optimization-Based Neuro-Adaptive Control (CoNAC) for Euler-Lagrange Systems
+}
+
+%\etitle{Study on Segmentation and Recognition for an Image Understanding}
+%\etitle{Genetic Programming: \titlebreak New Optimization Tools for Real-World Applications}
+
+%-----------------------------------------------------------------------
+% Thesis title in Korean
+% Insert \titlebreak where lines are to be separated.  Do not use the LaTeX command '\\'.
+%\begin{spacing}{2.0}
+\ktitle{
+오일러-라그랑주 시스템을 위한 제약 최적화 기반 신경망 적응 제어
+}
+%\end{spacing}
+%-----------------------------------------------------------------------
+% Advisor's name in English without a position such as 'Prof.'.
+\advisor{Kyunghwan Choi}
+
+%-----------------------------------------------------------------------
+% Advisor's name in Korean without a position such as 'Prof.'.
+\kadvisor{최경환}
+
+%-----------------------------------------------------------------------
+% Co-advisor's name in English
+% In case there is no co-advisor, comment out the following line with a "%" in the front.
+%\coadvisor{My Co-advisor}
+
+%-----------------------------------------------------------------------
+% Name of the author in English
+\ename{Myeongseok Ryu}
+
+%-----------------------------------------------------------------------
+% Name of the author in Korean seperated with '{}'.
+\kname{{}{}{}{}{유}{명}{석}} % 한글 이름 7글자까지 가능, 오른쪽 끝에 맞춰서 입력
+
+%-----------------------------------------------------------------------
+% Student ID of the author
+\studentid{20231022}
+
+%-----------------------------------------------------------------------
+% The year of graduation (ex. 1999)
+\coveryear{2025}
+
+%-----------------------------------------------------------------------
+% The date signed by the advisor.  The first is the month, second the date, and third the year.
+\advisorsigndate{December}{11}{2024}
+
+%-----------------------------------------------------------------------
+% The date signed by the referees.  The first is the month, second the date, and third the year.
+\refereesigndate{December}{11}{2024}
+
+%-----------------------------------------------------------------------
+% Names of the referees in English
+% For Master's thesis, input the names of the three referees (refereeA thru referee C) in full.
+% For Ph.D thesis, input the names of the five referees (refereeA thru referee E) in full.
+% For most cases, refereeA is the same as the advisor.
+
+\refereeA{Prof. Kyunghwan Choi.}
+\refereeB{Prof. Hyo-Sung Ahn.}
+\refereeC{Prof. Pilwon Hur.}
+% \refereeD{Prof. fourth prof.}
+% \refereeE{Prof. fifth prof.}
+
+%-----------------------------------------------------------------------
+% This is the beginning of the thesis.
+
+\dedication{
+Dedicated to my family.
+}
+
+\begin{document}
+%-----------------------------------------------------------------------
+% Abstract of the thesis in English.
+% Insert the abstract between \begin{eabstract} and \end{eabstract}.
+% You can either write the abstract directly here or import a file using the \input command.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract by English
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{eabstract}
+\begin{spacing}{2.0} % double spacing
+
+\input{misc/eabstract.tex}
+
+\end{spacing}
+\end{eabstract}
+
+%-----------------------------------------------------------------------
+% Abstract of the thesis in Korean.
+% Insert the abstract between \begin{kabstract} and \end{kabstract}.
+% You can either write the abstract directly here or import a file using the \input command.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract by Korean
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{kabstract}
+\begin{spacing}{2.0} % double spacing
+
+%국문초록
+\input{misc/kabstract.tex}
+
+\end{spacing}
+\end{kabstract}
+
+
+%-----------------------------------------------------------------------
+% Table of contents, list of tables and list of figures.
+% Use the \makecontents command to automatically generate the table of content
+\makecontents
+
+% In case there is no table, comment out the following line.
+% \listtables
+
+% In case there is no figure, comment out the following line.
+\listfigures
+
+% In case there is no algorithm, comment out the following line.
+% \listalgorithms
+
+%-----------------------------------------------------------------------
+% Input the thesis files written in LaTeX.
+% The \begin{document} command is not necessary here.
+% Refererence and vitae will folllow the main thesis text.
+%-----------------------------------------------------------------------
+% This is the beginning of the main thesis body.
+% Insert Chapter or section or subsection as many as you need.
+
+%%%%%%%%%%%%%%%%%%%%%
+% Chapter 1 Introduction
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DO NOT DELETE FOLLOWING TWO LINES! %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{spacing}{2.0} % double spacing
+\begin{spacing}{1.3} % double spacing
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% you start with the chapter 1
+\input{chapters/chap1.tex}
+
+\end{spacing}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{spacing}{2.0} % double spacing
+\begin{spacing}{1.3} % double spacing
+\input{chapters/chap2.tex}
+
+\end{spacing}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{spacing}{2.0} % double spacing
+\begin{spacing}{1.3} % double spacing
+\input{chapters/chap3.tex}
+
+\end{spacing}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{spacing}{2.0} % double spacing
+\begin{spacing}{1.3} % double spacing
+\input{chapters/chap4.tex}
+
+\end{spacing}
+
+      
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 5 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{spacing}{2.0} % double spacing
+\begin{spacing}{1.3} % double spacing
+\input{chapters/chap5.tex}
+      
+\end{spacing}
+      
+%%%%%%%%
+% Add more chapters if you wants
+%%%%%%%%
+
+
+%---------
+% summary
+%---------
+\begin{spacing}{2.0}
+\input{misc/summary.tex}
+\end{spacing}
+
+%-----------------------------------------------------------------------
+% This is the end of the main thesis body.
+
+%-----------------------------------------------------------------------
+% Input the list of references.
+\bibliographystyle{ieeetr}
+\bibliography{biblist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
+% You can comment out if you do not need appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{spacing}{2.0}
+% \input{misc/Appendix.tex}
+% \end{spacing}
+
+%-----------------------------------------------------------------------
+% Acknowledgements
+% Insert the text between \begin{acknowledgements} and \end{acknowledgements}.
+% You can either write the abstract directly here or import a file using the \input command.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements by Korean
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgements}
+\begin{spacing}{2.0}
+\input{misc/acknowledgements.tex}
+\end{spacing}
+\end{acknowledgements}
+
+
+%-----------------------------------------------------------------------
+% Input the curriculum vitae.
+% You may add as many lines as you need using the syntax of the \item command shown below.
+%-----------------------------------------------------------------------
+
+
+
+%\input Vitae2.0.tex
+%\input thesis-publications.tex
+
+% Insert activity if you have.
+%\activity
+%Activity Activity Activity Activity Activity Activity Activity Activity
+%Activity Activity Activity Activity Activity Activity Activity Activity
+
+% Insert awards if you have.
+
+%-----------------------------------------------------------------------
+% This is the end of the thesis.
+%
+\end{document}

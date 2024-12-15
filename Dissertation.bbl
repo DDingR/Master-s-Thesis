@@ -1,0 +1,187 @@
+\begin{thebibliography}{10}
+
+\bibitem{RN109}
+S.~Todorovic, A.~Wagner, S.~Müller, and J.~Neubeck, ``Neural network based model for friction potential estimation under longitudinal and lateral excitations,'' in {\em Journal of Physics: Conference Series}, vol.~2234, p.~012005, IOP Publishing, 2022.
+
+\bibitem{RN118}
+Y.~Shen, J.~Mao, A.~Wu, R.~Liu, and K.~Zhang, ``Optimal slip ratio tracking integral sliding mode control for an emb system based on convolutional neural network online road surface identification,'' {\em Electronics}, vol.~11, no.~12, p.~1826, 2022.
+
+\bibitem{RN107}
+A.~M. Ribeiro, A.~Moutinho, A.~R. Fioravanti, and E.~C. de~Paiva, ``Estimation of tire–road friction for road vehicles: a time delay neural network approach,'' {\em Journal of the Brazilian Society of Mechanical Sciences and Engineering}, vol.~42, no.~1, p.~4, 2020.
+
+\bibitem{RN115}
+S.~Wiedemann and C.~M. Hackl, ``Simultaneous identification of inverter and machine nonlinearities for self-commissioning of electrical synchronous machine drives,'' {\em IEEE Transactions on Energy Conversion}, vol.~38, no.~3, pp.~1767--1780, 2023.
+
+\bibitem{RN117}
+V.~Rausch, A.~Hansen, E.~Solowjow, C.~Liu, E.~Kreuzer, and J.~K. Hedrick, ``Learning a deep neural net policy for end-to-end control of autonomous vehicles,'' in {\em 2017 American Control Conference (ACC)}, pp.~4914--4919, IEEE, 2017.
+
+\bibitem{RN116}
+J.~Jhung, I.~Bae, J.~Moon, T.~Kim, J.~Kim, and S.~Kim, ``End-to-end steering controller with cnn-based closed-loop feedback for autonomous vehicles,'' in {\em 2018 IEEE intelligent vehicles symposium (IV)}, pp.~617--622, IEEE, 2018.
+
+\bibitem{RN112}
+M.~A. Buettner, N.~Monzen, and C.~M. Hackl, ``Artificial neural network based optimal feedforward torque control of interior permanent magnet synchronous machines: A feasibility study and comparison with the state-of-the-art,'' {\em Energies}, vol.~15, no.~5, p.~1838, 2022.
+
+\bibitem{RN113}
+N.~Monzen and C.~M. Hackl, ``Artificial neural network based optimal feedforward torque control of electrically excited synchronous machines,'' in {\em 2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)}, pp.~1--8, IEEE, 2023.
+
+\bibitem{RN114}
+N.~Monzen, F.~Stroebl, H.~Palm, and C.~M. Hackl, ``Multi-objective hyperparameter optimization of artificial neural networks for optimal feedforward torque control of synchronous machines,'' {\em IEEE Open Journal of the Industrial Electronics Society}, 2024.
+
+\bibitem{RN16}
+Y.-h. Sheu, ``Illuminating the black box: interpreting deep neural network models for psychiatric research,'' {\em Frontiers in Psychiatry}, vol.~11, p.~551299, 2020.
+
+\bibitem{RN17}
+C.~Rudin and J.~Radin, ``Why are we using black box models in ai when we don’t need to? a lesson from an explainable ai competition,'' {\em Harvard Data Science Review}, vol.~1, no.~2, pp.~1--9, 2019.
+
+\bibitem{RN5}
+S.~S. Ge, C.~C. Hang, T.~H. Lee, and T.~Zhang, {\em Stable adaptive neural network control}, vol.~13.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem{RN48}
+G.~Cybenko, ``Approximation by superpositions of a sigmoidal function,'' {\em Mathematics of control, signals and systems}, vol.~2, no.~4, pp.~303--314, 1989.
+
+\bibitem{RN6}
+P.~Ioannou and B.~Fidan, {\em Adaptive control tutorial}.
+\newblock SIAM, 2006.
+
+\bibitem{RN10}
+G.~Tao, {\em Adaptive control design and analysis}, vol.~37.
+\newblock John Wiley \& Sons, 2003.
+
+\bibitem{RN69}
+A.~Yeşildirek and F.~L. Lewis, ``Feedback linearization using neural networks,'' {\em Automatica}, vol.~31, no.~11, pp.~1659--1664, 1995.
+
+\bibitem{RN18}
+W.~Gao and R.~R. Selmic, ``Neural network control of a class of nonlinear systems with actuator saturation,'' {\em IEEE Transactions on Neural Networks}, vol.~17, no.~1, pp.~147--156, 2006.
+
+\bibitem{RN85}
+Y.~Zhang, P.~Y. Peng, and Z.~P. Jiang, ``Stable neural controller design for unknown nonlinear systems using backstepping,'' {\em IEEE Transactions on Neural Networks}, vol.~11, no.~6, pp.~1347--60, 2000.
+
+\bibitem{RN46}
+K.~Esfandiari, F.~Abdollahi, and H.~A. Talebi, ``Adaptive control of uncertain nonaffine nonlinear systems with input saturation using neural networks,'' {\em IEEE Transactions on Neural Networks and Learning Systems}, vol.~26, no.~10, pp.~2311--22, 2015.
+
+\bibitem{RN95}
+K.~Esfandiari, F.~Abdollahi, and H.~Talebi, ``A stable nonlinear in parameter neural network controller for a class of saturated nonlinear systems,'' {\em International Federation of Automatic Control Proceedings Volumes (IFAC)}, vol.~47, no.~3, pp.~2533--2538, 2014.
+
+\bibitem{RN108}
+S.~You, G.~Kim, S.~Lee, D.~Shin, and W.~Kim, ``Neural approximation-based adaptive control using reinforced gain for steering wheel torque tracking of electric power steering system,'' {\em IEEE Transactions on Systems, Man, and Cybernetics: Systems}, 2023.
+
+\bibitem{RN89}
+W.~He, Y.~Dong, and C.~Sun, ``Adaptive neural impedance control of a robotic manipulator with input saturation,'' {\em IEEE Transactions on Systems, Man, and Cybernetics: Systems}, vol.~46, no.~3, pp.~334--344, 2015.
+
+\bibitem{RN82}
+G.~Peng, C.~Yang, W.~He, and C.~P. Chen, ``Force sensorless admittance control with neural learning for robots with actuator saturation,'' {\em IEEE Transactions on Industrial Electronics}, vol.~67, no.~4, pp.~3138--3148, 2019.
+
+\bibitem{RN64}
+S.-J. Kim and J.-H. Suh, ``Adaptive robust rbf-nn nonsingular terminal sliding mode control scheme for application to snake robot’s head for image stabilization,'' {\em Applied Sciences}, vol.~13, no.~8, p.~4899, 2023.
+
+\bibitem{RN71}
+S.-J. Kim, M.~Jin, and J.-H. Suh, ``A study on the design of error-based adaptive robust rbf neural network back-stepping controller for 2-dof snake robot’s head,'' {\em IEEE Access}, vol.~11, pp.~23146--23156, 2023.
+
+\bibitem{RN19}
+S.~S. Ge and C.~Wang, ``Direct adaptive nn control of a class of nonlinear systems,'' {\em IEEE Transactions on Neural Networks}, vol.~13, no.~1, pp.~214--21, 2002.
+
+\bibitem{RN21}
+X.~Zhou, H.~Shen, Z.~Wang, H.~Ahn, and J.~Wang, ``Driver-centric lane-keeping assistance system design: A noncertainty-equivalent neuro-adaptive control approach,'' {\em IEEE/ASME Transactions on Mechatronics}, vol.~28, no.~6, pp.~3017--3028, 2023.
+
+\bibitem{RN13}
+O.~S. Patil, D.~M. Le, M.~L. Greene, and W.~E. Dixon, ``Lyapunov-derived control and adaptive update laws for inner and outer layer weights of a deep neural network,'' {\em IEEE Control Systems Letters}, vol.~6, pp.~1855--1860, 2021.
+
+\bibitem{RN65}
+D.~Rolnick and M.~Tegmark, ``The power of deeper networks for expressing natural functions.,'' {\em arXiv preprint arXiv:1705.05502}, 2017.
+
+\bibitem{RN11}
+E.~J. Griffis, O.~S. Patil, Z.~I. Bell, and W.~E. Dixon, ``Lyapunov-based long short-term memory (lb-lstm) neural network-based control,'' {\em IEEE Control Systems Letters}, 2023.
+
+\bibitem{RN12}
+R.~G. Hart, E.~J. Griffis, O.~S. Patil, and W.~E. Dixon, ``Lyapunov-based physics-informed long short-term memory (lstm) neural network-based adaptive control,'' {\em IEEE Control Systems Letters}, 2023.
+
+\bibitem{RN80}
+Z.~Liu, C.~Wu, X.~Shen, W.~Yao, J.~Liu, and L.~Wu, ``Adaptive interval type-2 fuzzy neural network-based novel fixed-time backstepping control for uncertain euler-lagrange systems,'' {\em IEEE Transactions on Fuzzy Systems}, 2024.
+
+\bibitem{RN9}
+J.~Nocedal and S.~J. Wright, {\em Numerical optimization}.
+\newblock Springer, 1999.
+
+\bibitem{RN7}
+M.~Krstic, P.~V. Kokotovic, and I.~Kanellakopoulos, {\em Nonlinear and adaptive control design}.
+\newblock John Wiley \& Sons, Inc., 1995.
+
+\bibitem{RN23}
+C.~A. Desoer and M.~Vidyasagar, {\em Feedback systems: input-output properties}.
+\newblock SIAM, 2009.
+
+\bibitem{RN22}
+D.~S. Bernstein, {\em Matrix mathematics: theory, facts, and formulas}.
+\newblock Princeton university press, 2009.
+
+\bibitem{RN1}
+S.~Boyd and L.~Vandenberghe, {\em Convex optimization}.
+\newblock Cambridge university press, 2004.
+
+\bibitem{RN4}
+J.~A. Farrell and M.~M. Polycarpou, {\em Adaptive approximation based control: unifying neural, fuzzy and traditional adaptive approximation approaches}.
+\newblock John Wiley \& Sons, 2006.
+
+\bibitem{RN43}
+A.~R. Barron, ``Universal approximation bounds for superpositions of a sigmoidal function,'' {\em IEEE Transactions on Information theory}, vol.~39, no.~3, pp.~930--945, 1993.
+
+\bibitem{RN70}
+P.~Kidger and T.~Lyons, ``Universal approximation with deep narrow networks,'' in {\em Conference on learning theory}, pp.~2306--2327, PMLR, 2020.
+
+\bibitem{RN15}
+A.~L. Maas, A.~Y. Hannun, and A.~Y. Ng, ``Rectifier nonlinearities improve neural network acoustic models,'' in {\em International conference on machine learning}, vol.~30, p.~3, Atlanta, GA, 2013.
+
+\bibitem{RN34}
+A.~Lewkowycz and G.~Gur-Ari, ``On the training dynamics of deep networks with $ l_2 $ regularization,'' {\em Advances in Neural Information Processing Systems}, vol.~33, pp.~4790--4799, 2020.
+
+\bibitem{RN36}
+D.~Wu and J.~Xu, ``On the optimal weighted $l_2 $ regularization in overparameterized linear regression,'' {\em Advances in Neural Information Processing Systems}, vol.~33, pp.~10112--10123, 2020.
+
+\bibitem{RN49}
+B.~Sengupta, K.~J. Friston, and W.~D. Penny, ``Efficient gradient computation for dynamical models,'' {\em Neuroimage}, vol.~98, pp.~521--7, 2014.
+
+\bibitem{RN33}
+E.~D. Markus, J.~T. Agee, and A.~A. Jimoh, ``Trajectory control of a two-link robot manipulator in the presence of gravity and friction,'' in {\em 2013 Africon}, pp.~1--5, IEEE, 2013.
+
+\bibitem{RN24}
+K.~Esfandiari, F.~Abdollahi, and H.~A. Talebi, {\em Neural network-based adaptive control of uncertain nonlinear systems}.
+\newblock Springer, 2022.
+
+\bibitem{RN60}
+S.~P. Karason and A.~M. Annaswamy, ``Adaptive control in the presence of input constraints,'' in {\em 1993 american control conference}, pp.~1370--1374, IEEE, 1993.
+
+\bibitem{RN88}
+E.~Arefinia, H.~A. Talebi, and A.~Doustmohammadi, ``A robust adaptive model reference impedance control of a robotic manipulator with actuator saturation,'' {\em IEEE Transactions on Systems, Man, and Cybernetics: Systems}, vol.~50, no.~2, pp.~409--420, 2017.
+
+\bibitem{RN90}
+K.~Choi, J.~Kim, and K.-B. Park, ``Generalized model predictive torque control of synchronous machines,'' {\em IEEE/ASME Transactions on Mechatronics}, 2024.
+
+\bibitem{RN72}
+J.~D. Vasquez-Plaza, J.~M.~R. Scarpetta, T.~M. Hansen, R.~Tonkoski, and F.~A. Rengifo, ``Smooth mathematical representation of the der$_a$ aggregated model,'' {\em IEEE Access}, vol.~11, pp.~101398--101408, 2023.
+
+\bibitem{RN119}
+S.~Bhasin, R.~Kamalapurkar, M.~Johnson, K.~G. Vamvoudakis, F.~L. Lewis, and W.~E. Dixon, ``A novel actor–critic–identifier architecture for approximate optimal control of uncertain nonlinear systems,'' {\em Automatica}, vol.~49, no.~1, pp.~82--92, 2013.
+
+\bibitem{RN120}
+B.~Kiumarsi, K.~G. Vamvoudakis, H.~Modares, and F.~L. Lewis, ``Optimal and autonomous control using reinforcement learning: A survey,'' {\em IEEE transactions on neural networks and learning systems}, vol.~29, no.~6, pp.~2042--2062, 2017.
+
+\bibitem{RN121}
+B.~A. Wallace and J.~Si, ``Continuous-time reinforcement learning control: A review of theoretical results, insights on performance, and needs for new designs,'' {\em IEEE Transactions on Neural Networks and Learning Systems}, 2023.
+
+\bibitem{RN122}
+R.~Hu and M.~Lauriere, ``Recent developments in machine learning methods for stochastic control and games,'' {\em arXiv preprint arXiv:2303.10257}, 2023.
+
+\bibitem{RN123}
+M.~Lechner, �.~Žikelić, K.~Chatterjee, and T.~A. Henzinger, ``Stability verification in stochastic control systems via neural network supermartingales,'' in {\em Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~36, pp.~7326--7336, 2022.
+
+\bibitem{RN62}
+B.~Evens, P.~Latafat, A.~Themelis, J.~Suykens, and P.~Patrinos, ``Neural network training as an optimal control problem:—an augmented lagrangian approach—,'' in {\em 2021 60th IEEE Conference on Decision and Control (CDC)}, pp.~5136--5143, IEEE, 2021.
+
+\bibitem{RN98}
+J.~Wang, F.~Yu, X.~Chen, and L.~Zhao, ``Admm for efficient deep learning with global convergence,'' in {\em Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}, pp.~111--119, 2019.
+
+\bibitem{RN94}
+G.~Taylor, R.~Burmeister, Z.~Xu, B.~Singh, A.~Patel, and T.~Goldstein, ``Training neural networks without gradients: A scalable admm approach,'' in {\em International conference on machine learning}, pp.~2722--2731, PMLR, 2016.
+
+\end{thebibliography}

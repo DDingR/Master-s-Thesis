@@ -10,12 +10,10 @@
 \section{Introduction} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As presented in Chapter \ref{chap1:sec:example}, one of the common issues in neuro-adaptive control (NAC) is that the boundedness of the control inputs is not guaranteed.
-It is because the boundedness of the output of the neural networks (NNs) is not inherently ensured, since the input-output relationship of the NNs is not interpretable.
-This issue should be addressed for safety, because the unbounded control input may reach the actuator's physical limitations and result in system collapse.
-
-In this chapter, a novel Constrained Optimization based Neuro-Adaptive Control (CoNAC) is presented for uncertain Euler-Lagrange systems with a weight norm constraint.
-The satisfaction of the boundedness of the weights are reformulated into weight norm inequality constraints, which are then incorporated into the CoNAC.
+In this chapter, a novel constrained optimization based neuro-adaptive control (CoNAC) is presented for uncertain Euler-Lagrange systems with a weight norm constraint. 
+As presented in Chapter \ref{chap1:sec:example}, one of the common issues in neuro-adaptive control (NAC) is that the boundedness of neural network’s (NN) weights is not guaranteed.
+Since the amplitude of control input of NAC is dependent on the weights, the unbounded weights may lead to instability and severe safety issues. 
+The satisfaction of the boundedness of the weights are reformulated into weight norm constraints, which are then incorporated into the CoNAC.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem Formulation}
@@ -36,17 +34,17 @@ Using the user-designed matrices $M_0>0,C_0$ and $G_0$, \eqref{chap3:eq:sys1} ca
 where $f(q,\dot q,\ddot q) \triangleq -(M-M_0)\ddot q-(C-C_0)(q,\dot q)\dot q -(G-G_0) -F(q)$ denotes the residual unknown term.
 
 As presented in Section \ref{chap1:sec:example}, the parameter drift (\ie the weights of NNs can diverse) may occur due to the lumped disturbance term.
-Hence, the objective of the control design is to make $q$ track the continuously differentiable desired trajectory $q_d(t):\R\to \R^n$ under the unknown terms $f$ while preventing the parameter drift.
+Hence, the objective of the control design is to make $q$ track the continuously differentiable desired trajectory $q_d(t):\R\to \R^n$ under the unknown terms $f$ while ensuring boundedness of weights of NN in the controller.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exiting Works for Boundedness of Weights} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Most studies modify their adaptation laws to ensure the boundedness of the weights, noting that the boundedness of the NNs' output can be ensured by the boundedness of the weights.
+Most studies modify their adaptation laws to ensure the boundedness of the weights.
 
 \subsection{Projection Operator} \label{chap3:sec:proj}
 
-In \cite{RN13, RN11, RN21}, the projection operator is utilized to prevent the weight divergence, by projecting the adaptation direction on the convex set of the weights.
+In \cite{RN13, RN11, RN21}, the projection operator is utilized to prevent the weight divergence, by projecting the adaptation direction on some convex set of the weights.
 The projection operator is defined in \cite[Appendix E, eq.~(E.4)]{RN7} and represented as
 \begin{equation}
     \text{Proj}_\Omega(y)
@@ -74,7 +72,7 @@ The projection operator is defined in \cite[Appendix E, eq.~(E.4)]{RN7} and repr
 \end{equation}
 where $\Gamma=\Gamma^T>0$ is adaptation gain matrix and $y\in\R^n$ denotes the update direction of optimization variable $x\in\R^n$.
 Moreover, $\Omega\triangleq \{x\ \vert\ c(x)\le 0\}$ denotes a convex set defined by $c(\cdot)$ is a convex function and $\delta\Omega$ denotes a boundary of $\Omega$.
-The convex function $c(\cdot)$ is typically selected as $x^Tx\le \bar x$ where $\bar x\in\R_{>0}$ is a maximum norm of $x$, to constrain $x$ to remain in $\Omega$.
+The convex function $c(\cdot)$ is typically selected as $x^Tx\le \bar x^2$ where $\bar x\in\R_{>0}$ is a maximum norm of $x$.
 However, in the literature, the projection operator is only applied to theoretically guarantee the boundedness of the weights, by selecting the convex set as large as possible.
 This is because, the authors attempts to estimate the globally ideal weights whose magnitude is unknown.
 
@@ -99,7 +97,7 @@ Moreover, they lack theoretical analysis regarding the optimality of the adapted
 
 Interestingly, similar approaches that regulate the magnitude of the weights have also been introduced in the deep learning literature.
 One of the approaches is $L_2$-regularization, which adds the squared magnitudes of the weights to the objective function \cite{RN34, RN36}.
-Then, the adaptation process attempts to reduce the magnitude of the weights, not only the original objective function.
+Then, the adaptation process attempts to reduce not only the original objective function, but also the magnitude of the weights.
 By regulating the magnitude of the weights, the stability of the adaptation process can be enhanced, and overfitting can be prevented.
 However, $L_2$-regularization also involves same limitations as $\sigma$ and $\epsilon$-modifications.
 
@@ -107,15 +105,15 @@ However, $L_2$-regularization also involves same limitations as $\sigma$ and $\e
 \section{CoNAC with Weight Norm Constraint} \label{chap3:problem} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Without loss of generality a single hidden layer neural network (SHLNN) is utilized in this chapter for better intuition. 
-Note that SHLNN is special case of DNN presented in Section \ref{chap2:sec:DNN}.
-The architecture of the CoNAC is illustrated in Fig.~\ref{chap3:fig:ctrl}, consisting of: a reference generator, a SHLNN that functions as a neuro-adaptive controller, and a weight optimizer for the SHLNN. 
+Without loss of generality a single hidden layer neural network (SHLNN) is utilized in this chapter for better intuition and simplicity. 
+Note that SHLNN is the simplest case of DNN presented in Section \ref{chap2:sec:DNN}.
+The architecture of the CoNAC is illustrated in Fig.~\ref{chap3:fig:ctrl}, consisting of: a reference generator, the SHLNN that functions as NAC, and a weight optimizer for the SHLNN. 
 The reference generator is designed based on backstepping control (BSC), presented in previous Section \ref{chap2:sec:ctrl} , to generate a tracking reference for both $q$ and $\dot q$.
 
 \begin{figure*}[t]
     \centering
     \includegraphics[width=0.9\linewidth]{imgs/ControllerChap3.drawio.png}
-    \caption{Architecture of the Constrained Optimization-based Neuro-Adaptive Controller (CoNAC).}
+    \caption{Architecture of the constrained optimization-based neuro-adaptive controller (CoNAC).}
     \label{chap3:fig:ctrl}
 \end{figure*}
 
@@ -160,10 +158,12 @@ The stabilizing control law, which does not account for weight norm and input co
     \tau^* \triangleq-M_0\cdot ({k_z}{\tilde z})+ 
     ( 
         -M_0{\tilde q}+C_0{z}+G_0-f+M_0 \dot z^*
-    ).
+    )
+    .
     \label{chap3:eq:desired_control}
 \end{equation}
-This control law ensures that the time derivative of the Lyapunov function is negative definite, as $\dot {\mathcal V}_{c2} = -{k_q}{\tilde q}^T  {\tilde q}-{k_z}{\tilde z}^T  {\tilde z}<0$, in the absence of any constraints. However, the control law $\tau^*$ cannot be realized in practice because the lumped system uncertainty function $f$, which accounts for unmodeled dynamics and disturbances, is not available.
+This control law ensures that the time derivative of the Lyapunov function is negative definite, as $\dot {\mathcal V}_{c2} = -{k_q}{\tilde q}^T  {\tilde q}-{k_z}{\tilde z}^T  {\tilde z}<0$, in the absence of any constraints. 
+However, the control law $\tau^*$ cannot be realized in practice because the lumped system uncertainty function $f$, which accounts for unmodeled dynamics and disturbances, is not available.
 
 As introduced in Section \ref{chap2:sec:DNN}, the SHLNN which is simple version of DNN is represented as 
 \begin{equation}
@@ -179,7 +179,8 @@ The ideal weight vector $\theta^*$ is typically assumed to be bounded.
 In this thesis, $\theta^*$ is defined as a local optimal point, rather than a global optimal point.
 Then using the estimated weight vector $\hat\theta=[\hat\theta_1^T,\hat\theta_0^T]^T$ of $\theta^*=[\theta_1^{*T},\theta_0^{*T}]^T$, the desired controller $\tau^*\approx -\Phi(q_{NN};\theta^*)-\epsilon$ can be approximated as follows:
 \begin{equation}
-    \tau \triangleq -\Phi({q_{NN}};\hat\theta).
+    \tau \triangleq -\Phi({q_{NN}};\hat\theta)
+    .
     \label{chap3:eq:approx_control}
 \end{equation}
 For further sections, let $\Phi^*\triangleq\Phi({q_{NN}};\theta^*)$ and $\phi^* \triangleq\phi(V_0^{*T}{q_{NN}})$, and $\hat\Phi\triangleq\Phi({q_{NN}};\hat\theta)$, $\hat\phi \triangleq\phi(\hat V_0^{T}{q_{NN}})$ and $\hat\phi' = \partial \hat\phi/\partial (\hat V_0^Tq_{NN})$.
@@ -197,9 +198,7 @@ The error dynamics \eqref{chap3:eq:e_dyna} can be represented as a first-order s
     \dot\xi = A_\xi \xi + B_\xi (\Phi^*-\hat\Phi+\epsilon)
     \label{chap3:eq:xi_dyna}
 \end{equation}
-where 
-$\xi\triangleq[{\tilde q}^T  , {\tilde z}^T  ]^T  \in\R^{2n}$ denotes the augmented error,
-and
+where $\xi\triangleq[{\tilde q}^T  , {\tilde z}^T  ]^T  \in\R^{2n}$ denotes the augmented error, and
 \begin{equation}
     A_\xi \triangleq 
     \begin{bmatrix}
@@ -209,7 +208,8 @@ and
     B_\xi \triangleq 
     \begin{bmatrix}
         0_{n\times n}\\M_0^{-1}
-    \end{bmatrix}.
+    \end{bmatrix}
+    .
 \end{equation}
 Note that $A_\xi$ is a stable matrix, and $\Vert B_\xi\Vert_F<\infty$.
 
@@ -224,18 +224,14 @@ Consider a positive definite objective function defined as
     {1\over 2} \xi^T   W\xi
 \end{equation}
 where $W=W^T  >0$ is a weighting matrix.
-The weight norm constraints $c_j,\ j\in\mathcal{I}$ presented in following Section \ref{chap3:sec:weight_cstr}, are imposed during the weight adaptation process to minimize the objective function, where $\mathcal I$ denotes the set of the imposed inequality constraints.
+The weight norm constraints $c_j,\ j\in\mathcal{I}$ presented in following Section \ref{chap3:sec:weight_cstr}, are imposed during the weight adaptation process, where $\mathcal I$ denotes the set of the imposed inequality constraints.
 The corresponding constrained optimization problem is formulated as
 \begin{equation}
-    \begin{matrix}
-        \min_{\hat\theta} \ J(\xi;\hat\theta)
-        \\ \\
-        \begin{aligned}
-        \text{s.t. }&c_{j}(\hat\theta) 
-        \le0, \quad j\in\mathcal{I},
-        % c_{\mathcal{q},i}(\hat\theta) =0, \quad i\in\mathcal{q},\\
-        \end{aligned}
-    \end{matrix}
+    \underset{\hat\theta}{\text{minimize}}\quad J(\xi;\hat\theta),
+    \quad\quad
+    \text{subject to }
+    c_{j}(\hat\theta)\le0, \  \forall j\in\mathcal{I}
+    . 
     \label{chap3:eq:train_obj}
 \end{equation}
 % where $q_a$ is an additional vector in the constraints.
@@ -249,7 +245,8 @@ Here, tracking error $\xi$ is considered a pre-defined data or parameter for thi
 where $\lambda_j$ denotes the Lagrange multiplier for each constraint, and $\mathcal A \triangleq \{j\in\mathcal I\ |\ c_j\ge 0\}$ represents the active set.
 
 The adaptation laws for $\hat\theta$ and $[\lambda]_{j\in\mathcal A}$ are derived to solve the dual problem of \eqref{chap3:eq:train_obj} (\ie  $\min_{\hat\theta} \max_{[\lambda]_{j\in\mathcal A}}L(\xi,\hat\theta,[\lambda]_{j\in\mathcal A})$), as follows:
-%\begin{equation}
+\begin{subequations}
+    % \begin{equation}
     \begin{align}
             \dot {\hat\theta}&=-\alpha {\partial L\over\partial \hat\theta}
             =-\alpha 
@@ -269,15 +266,18 @@ The adaptation laws for $\hat\theta$ and $[\lambda]_{j\in\mathcal A}$ are derive
             \forall j\in\mathcal A,
         \label{chap3:eq:adap_L_max}
     \end{align}
-% \end{equation}
-where $\alpha\in\R_{>0}$ denotes the adaptation gain (learning rate) and $\beta_j\in\R_{>0}$ denotes the update rate of the Lagrange multipliers in $\mathcal A$. 
-The Lagrange multipliers associated with inequality constraints are non-negative, \ie $\lambda_j\ge 0$, and they become zero when their corresponding constraints are inactive.
-When a constraint $c_j$ becomes active (\ie violated), the corresponding Lagrange multiplier $\lambda_j$ increases to address the violation. 
+    \label{chap3:eq:adap}
+    % \end{equation}
+\end{subequations}
+where $\alpha\in\R_{>0}$ denotes the adaptation gain (also known as learning rate) and $\beta_j\in\R_{>0}$ denotes the update rate of the Lagrange multipliers in $\mathcal A$. 
+The Lagrange multipliers associated with inequality constraints are non-negative.
+When a constraint $c_j$ becomes active (\ie violated), the corresponding Lagrange multiplier $\lambda_j$ increases from zero to address the violation by adjusting the weights' adaptation direction $\dot{\hat\theta}$. 
 Once the violation is resolved and the constraint is no longer active (\ie $c_j < 0$), the multiplier decreases gradually until it returns to zero. 
-Note that this adaption law is similar to the ALM in \cite{RN22}, where the adaptation law for Lagrange multipliers is given by $\lambda_j\leftarrow \text{max}(\lambda_j-c_j/\mu,0)$, with $\mu\in\R_{>0}$ being the penalty parameter. 
+Note that this adaption law is similar to the augmented Lagrangian method (ALM) in \cite{RN22}, where the adaptation law for Lagrange multipliers is given by $\lambda_j\leftarrow \text{max}(\lambda_j-c_j/\mu,0)$, with $\mu\in\R_{>0}$ being the penalty parameter. 
     
-At steady state, where $\dot{\hat\theta}=0$ and $\dot\lambda_j=0$, the KKT conditions are satisfied, \ie $\partial L/\partial \hat\theta=0$, $c_j \le 0$, $\lambda_j \ge 0$, and $\lambda_j c_j=0$ \cite[Chap.~12 T.~12.1]{RN9}.
-In other words, the proposed optimizer updates the SHLNN weights and Lagrange multipliers in a way that satisfies the KKT conditions. These conditions represent the first-order necessary conditions for optimality, guiding the updates toward candidates for a locally optimal point.
+At steady state, where $\dot{\hat\theta}=0$ and $\dot\lambda_j=0$, the KKT conditions defined in Theorem \ref{chap2:thm:KKT}, are satisfied, \ie $\partial L/\partial \hat\theta=0$, $c_j \le 0$, $\lambda_j \ge 0$, and $\lambda_j c_j=0$.
+In other words, the proposed optimizer updates the SHLNN weights and Lagrange multipliers in a way that satisfies the KKT conditions. 
+These conditions represent the first-order necessary conditions for optimality, guiding the updates toward candidates for a locally optimal point.
 
 \subsubsection{Calculation of the Exact Gradient of Objective Function}
 
@@ -289,7 +289,8 @@ By partially differentiating \eqref{chap3:eq:xi_dyna}, the sensitivity equation 
     \label{chap3:eq:eta_dyna}
 \end{equation}
 where $\eta \triangleq \partial \xi/\partial \hat\theta\in\R^{2n\times \Xi}$.
-Since the initial value of $\xi$ is independent to $\hat\theta$, $\eta|_{t=0}$ is a zero matrix. The gradient of the objective function with respect to $\hat\theta$ is then obtained as 
+Since the initial value of $\xi$ is independent to $\hat\theta$, $\eta\vert_{t=0}$ is a zero matrix. 
+The gradient of the objective function with respect to $\hat\theta$ is then obtained as 
 \begin{equation}
    {\partial J\over\partial \hat\theta} =  {\partial \xi\over \partial \hat\theta}^T  W\xi=\eta^T  W\xi\in\R^\Xi.
    \label{chap3:eq:dJdth}
@@ -327,12 +328,15 @@ and
     W
     \xi
 \end{equation}
-where $\eta_i \triangleq \partial \xi/\partial \hat\theta_i\in\R^{2n\times \Xi_i}$. The exact gradient of the objective function is calculated based on \eqref{chap3:eq:dJdth}, with the value of $\eta$ obtained by simulating the sensitivity equation \eqref{chap3:eq:eta_dyna}.
+where $\eta_i \triangleq \partial \xi/\partial \hat\theta_i\in\R^{2n\times \Xi_i}$. 
+The exact gradient of the objective function is calculated based on \eqref{chap3:eq:dJdth}, with the value of $\eta$ obtained by simulating the sensitivity equation \eqref{chap3:eq:eta_dyna}.
 
-The proposed controller is implemented using Algorithm \ref{chap3:alg:alg1}. For implementation in the discrete-time domain, it is recommended to use a sufficiently small sampling time $T_s$. If a large $T_s$ is used, $\alpha$ and $\beta_j$ should satisfy the Armijo condition \cite[Chap.~3 eq.~(3.4)]{RN9} to ensure that the objective function decreases.
+The proposed controller is implemented using Algorithm \ref{chap3:alg:alg1}. 
+For implementation in the discrete-time domain, it is recommended to use a sufficiently small sampling time $T_s$. 
+If a large $T_s$ is used, $\alpha$ and $\beta_j$ should satisfy the Armijo condition \cite[Chap.~3 eq.~(3.4)]{RN9} to ensure that the objective function decreases.
 
 \begin{algorithm}[t]
-    \caption{Weight Optimizer Implementation.}\label{chap3:alg:alg1}
+    \caption{Weight optimizer implementation.}\label{chap3:alg:alg1}
     \SetKwInOut{Input}{input}
     \SetKwInOut{Output}{output}
         \Input{$\xi$, $\hat\theta$, $\lambda_j$, $\eta$}
@@ -396,7 +400,7 @@ The gradient of the constraints can be obtained easily as follows:
 The following theorem proves the boundedness of the tracking error and the weight estimation of the weights.
 
 \begin{theorem}
-    For the dynamical system in \eqref{chap3:eq:sys1}, the proposed controller \eqref{chap3:eq:approx_control} and the adaptation law \eqref{chap3:eq:adap_th}, \eqref{chap3:eq:adap_L} and \eqref{chap3:eq:adap_L_max} ensure the boundedness of the tracking error $\xi$ and the weight estimation $\hat\theta$, provided that control gains ${k_q}$ and ${k_z}$ satisfy \eqref{chap3:eq:stable_cond}.
+    For the dynamical system in \eqref{chap3:eq:sys1}, the proposed controller \eqref{chap3:eq:approx_control} and the adaptation law \eqref{chap3:eq:adap} ensure the boundedness of the tracking error $\xi$ and the weight estimation $\hat\theta$, provided that control gains ${k_q}$ and ${k_z}$ satisfy \eqref{chap3:eq:stable_cond}.
 \end{theorem}
 
 \begin{proof}
@@ -433,18 +437,15 @@ On the other hand, the dynamics of $\eta_1$ and $\hat\theta_1$ are represented a
 According to Theorem \ref{chap2:thm:BIBO}, the boundedness of $\eta_1$ can be obtained, since $A_\xi$ is stable and the residual term $-B_\xi (I_{l_{2}}\otimes \hat\phi^T)$ is bounded.
 
 Define the Lyapunov function $\mathcal V_1=(1/2)\xi^TP\xi+(1/2\alpha)\tilde\theta_1^T\tilde\theta_1$, with the Lyapunov equation $A_\xi^TP+PA_\xi=-Q$, where $A_\xi<0,P=P^T>0$, and $Q>0$.
-Using a proposition $\hat V_1^T\hat\phi = \text{vec}(\hat V_1^T\hat\phi)=\text{vec}(\hat\phi^T\hat V_1) = (I_{l_2}\otimes \hat\theta^T)\text{vec}(\hat V_1)=(I_{l_2}\otimes \hat\phi^T)\hat\theta_1$ \cite[Proposition~(7.1.9)]{RN22}, the time derivative of $\mathcal V_1$ is
+Using Proposition \ref{chap2:prop:kron} (\ie $\hat V_1^T\hat\phi = \text{vec}(\hat V_1^T\hat\phi)=\text{vec}(\hat\phi^T\hat V_1) = (I_{l_2}\otimes \hat\theta^T)\text{vec}(\hat V_1)=(I_{l_2}\otimes \hat\phi^T)\hat\theta_1$), the time derivative of $\mathcal V_1$ is
 \begin{equation}
     \begin{aligned}
-        \dot {\mathcal V}_1 =& {1\over 2}\xi^T(A_\xi^TP+PA_\xi)\xi+\xi ^TP ( -B_\xi\hat V_1^T\hat \phi   +B_\xi w(t) )\\
-        &+\hat\theta_1^T
+        \dot {\mathcal V}_1 =& {1\over 2}\xi^T(A_\xi^TP+PA_\xi)\xi+\xi ^TP ( -B_\xi\hat V_1^T\hat \phi   +B_\xi w(t) )+\hat\theta_1^T
         \bigg(
             -\eta_1^TW \xi-2\lambda_{\theta_1} \hat\theta_1 
         \bigg)
         \\
         =& -{1\over 2}\xi^TQ\xi -\xi^TPB_\xi(I_{l_2}\otimes \hat\phi^T)\hat\theta_1 +\xi^T\Delta
-        \\
-        &
         -\hat\theta_1^T\eta_1^TW\xi
         -2\lambda_{\theta_1} \hat\theta_1^T\hat\theta_1
         \\
@@ -459,8 +460,7 @@ Using a proposition $\hat V_1^T\hat\phi = \text{vec}(\hat V_1^T\hat\phi)=\text{v
         -{\lambda_\text{min}(Q)\over 2} +{\bar M\over 2}
         \bigg)
         \Vert \xi\Vert ^2 +\bar\Delta \Vert \xi\Vert  
-        \\
-        &+ 
+        + 
         \bigg(
         -2\lambda_{\theta_1} 
         +{\bar M\over 2}
@@ -611,9 +611,9 @@ The reference signal of the $q=[q_1,q_2]^T$ is defined as follows:
     .
 \end{equation}
 
-For the comparative study, three controllers were selected: the neuro-adaptive controller with $L_2$-regularization (NAC-L2) and with $\epsilon$-modification (NAC-eMod), and the proposed controller with constrained optimization (NAC-CO).
+For the comparative study, three controllers were selected: the neuro-adaptive controller with $L_2$-regularization (NAC-L2) and with $\epsilon$-modification (NAC-eMod), and the proposed controller with constrained optimization (CoNAC).
 %%%%%%%%%%%%%%%%%%%%%
-The performances of the selected controllers are compared based on the tracking performances and the dependencies of the parameters $\lambda$, $\rho$, and $\beta_j$ of NAC-L2, NAC-eMod, and NAC-CO, respectively.
+The performances of the selected controllers are compared based on the tracking performances and the dependencies of the parameters $\lambda$, $\rho$, and $\beta_j$ of NAC-L2, NAC-eMod, and CoNAC, respectively.
 The square root of integrated squared error (ISE) (\ie $\sqrt{\int_0^T\Vert\xi\Vert^2\,dt}$, where $T$ denotes a simulation termination time) is utilized to evaluate the tracking performances.
 The parameter dependencies of the controllers were examined via various values of the parameters. 
 The values ranged from $0.001$ to $1$ across $10$ samples.
@@ -621,7 +621,7 @@ The values ranged from $0.001$ to $1$ across $10$ samples.
 
 The control laws of all three controllers were the same as defined in \eqref{chap3:eq:approx_control}.
 The adaptation law of NAC-L2 is derived by adding the squared weight term $(1/2)\lambda\hat\theta^T\hat\theta$ to the objective function such that $J_{L_2} = J+(1/2)\lambda\hat\theta^T\hat\theta$, where $\lambda\in\R_{>0}$ denotes the $L_2$-coefficient.
-Then the adaptation law obtained by the gradient descent method is adjusted by adding stabilizing term $-\alpha\lambda\hat\theta$ as follows:
+The adaptation law obtained via the gradient descent method is subsequently adjusted by adding stabilizing term $-\alpha\lambda\hat\theta$ as follows:
 \begin{equation} 
     \dot{\hat\theta} = 
     {\partial J_{L_2}\over\partial \hat\theta}
@@ -643,14 +643,14 @@ For NAC-eMod, Similar to $\sigma$-modification, the stabilizing function $-\alph
 \end{equation}
 where $\rho\in\R_{>0}$ denotes the $\epsilon$-modification coefficient.
 By $\Vert\tilde z\Vert$, the stabilizing function proportionally increases as the tracking error $\tilde z$ increases.
-Therefore, the adaptation attempts to reduce the tracking error mainly, if the tracking error is sufficiently regulated.
-The adaptation law of NAC-CO is presented in \eqref{chap3:eq:adap_th}, \eqref{chap3:eq:adap_L}, and \eqref{chap3:eq:adap_L_max}.
-Due to the stabilizing functions, the weights of NAC-L2 and NAC-eMod are biased, since the stabilizing functions drive the weights toward the origin.
+Therefore, the adaptation attempts to reduce the tracking error mainly without the effect of the stabilizing function, if the tracking error is sufficiently regulated.
+The adaptation law of CoNAC is presented in \eqref{chap3:eq:adap}.
+Owing to the stabilizing functions, the weights of NAC-L2 and NAC-eMod are biased, since the stabilizing functions drive the weights toward the origin.
 
 All controllers had the same control parameters except their crucial parameters (\ie $\lambda$, $\rho$ and $\beta_j$) as $k_q=1.1$, $k_z=10$, $M_0=I_2$ and $W=\text{diag}([5,1,15,15])$.
 The parameters of the NNs were set $l_0=2$, $l_1=16$, $l_2=2$, and $\alpha=10^3$ and the same random seed was applied for the weight initialization.
 The NN input vector was set to the desired trajectory $q_d$, with the augmented 1 to incorporate the bias term in the weight matrix, such that $q_{NN}=[q_d^T,1]^T$. 
-For NAC-CO, the parameters of the weight norm constraints were set as $\bar\theta_0=10$ and $\bar\theta_1=20$.
+For CoNAC, the parameters of the weight norm constraints were set as $\bar\theta_0=10$ and $\bar\theta_1=20$.
 The sampling time of the simulation and the simulation termination time were set to $T_s=10^{-4}$ and $T=10$, respectively.
 
 \subsection{Results}
@@ -658,38 +658,38 @@ The sampling time of the simulation and the simulation termination time were set
 \begin{figure}[!t]      
     \centering
     {\includegraphics[width=.85\linewidth]{imgs/BoxWhisker.drawio.png}}
-    \caption{Box-and-Whisker Plot of Square Root of Tracking ISE of NAC-L2, NAC-eMod and NAC-CO Through Various 
- Values of Parameters.
-    The red cross means outlier, the upper and lower edges of the blue box mean upper and lower quartiles and the red line means median.}
+    \caption{
+        Box-and-Whisker plot of the square root of the tracking ISEs of NAC-L2, NAC-eMod and CoNAC across various parameter values.
+    }
     \label{chap3:fig:box-whisker}
 \end{figure}
 
 \begin{table}[!t]
     \renewcommand{\arraystretch}{1.3}
-    \caption{Quantitative Comparison of Square Root of Tracking ISE.}
+    \caption{Quantitative comparison of square root of tracking ISE.}
     \centering
     \begin{tabular}{|c||c|c|c|}
     \hline
-     & \textbf{NAC-L2} & \textbf{NAC-eMod} & \textbf{NAC-CO} (proposed) 
+     & \textbf{NAC-L2} & \textbf{NAC-eMod} & \textbf{CoNAC} (proposed) 
      \\
     \hline 
     Maximum         & $11.1753$e-3 & $0.5603$e-3 & $0.3439$e-3 \\
     \hline
-    % Upper quartile  & $1.7284$e-3 & $0.5566$e-3 & $0.3261$e-3 \\
-    % \hline
+    Upper quartile  & $1.7284$e-3 & $0.5566$e-3 & $0.3261$e-3 \\
+    \hline
     Median          & $0.5898$e-3 & $0.5519$e-3 & $0.3240$e-3 \\
     \hline
-    % Lower quartile  & $0.5533$e-3 & $0.5470$e-3 & $0.3238$e-3 \\
-    % \hline
+    Lower quartile  & $0.5533$e-3 & $0.5470$e-3 & $0.3238$e-3 \\
+    \hline
     Minimum         & $0.5434$e-3 & $0.5434$e-3 & $0.3235$e-3 \\
     \hline
     \end{tabular}
     \label{chap3:table:error_norm}
 \end{table}
 
-As shown in Fig.~\ref{chap3:fig:box-whisker}, the maximum square root of tracking ISE of NAC-CO is smaller than the minimum square root of tracking ISEs of NAC-L2 and NAC-eMod for all variations of the parameters.
-This is because NAC-L2 and NAC-eMod have the bias of the weights to the origin, due to the presence of the stabilizing functions.
-The quantitative comparison of the square root of tracking ISE is provided in Table~\ref{chap3:table:error_norm}.
+As shown in Fig.~\ref{chap3:fig:box-whisker}, the maximum square root of tracking ISE of CoNAC is smaller than the minimum square root of tracking ISEs of NAC-L2 and NAC-eMod for all variations of the parameters.
+This is because NAC-L2 and NAC-eMod bias the weights to the origin, due to the presence of the stabilizing functions.
+A quantitative comparison of the square root of tracking ISE is provided in Table~\ref{chap3:table:error_norm}.
 
 \begin{figure}[!t]      
     \centering
@@ -699,10 +699,10 @@ The quantitative comparison of the square root of tracking ISE is provided in Ta
         \subfloat[NAC-eMod]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig10.eps}%
         \label{chap3:fig:weight_NAC-eMod}}
     \vfill
-        \subfloat[NAC-CO]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig8.eps}%
-        \label{chap3:fig:weight_NAC-CO}}
+        \subfloat[CoNAC]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig8.eps}%
+        \label{chap3:fig:weight_CoNAC}}
     \vfill
-    \caption{Weight norms of NAC-L2, NAC-eMod and NAC-CO.}
+    \caption{Weight norms of NAC-L2, NAC-eMod and CoNAC.}
     \label{chap3:fig:weight}
 \end{figure}
 
@@ -714,10 +714,10 @@ The quantitative comparison of the square root of tracking ISE is provided in Ta
         \subfloat[NAC-eMod]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig7.eps}%
         \label{chap3:fig:error_NAC-eMod}}
     \vfill
-        \subfloat[NAC-CO]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig5.eps}%
-        \label{chap3:fig:error_NAC-CO}}
+        \subfloat[CoNAC]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig5.eps}%
+        \label{chap3:fig:error_CoNAC}}
     \vfill
-    \caption{Tracking errors of NAC-L2, NAC-eMod and NAC-CO.}
+    \caption{Tracking errors of NAC-L2, NAC-eMod and CoNAC.}
     \label{chap3:fig:error}
 \end{figure}
 
@@ -727,17 +727,17 @@ Moreover, the high dependency of NAC-L2 to the $L_2$-regularization coefficient 
 Since the weight norm is decreased, NAC-L2 cannot generate sufficient control inputs, resulting in a larger square root of tracking ISE, as shown in Fig.~\ref{chap3:fig:error_NAC-L2}.
 
 On the other hand, NAC-eMod exhibits lower dependency on the $\epsilon$-modification coefficient $\rho$ as shown in Fig.~\ref{chap3:fig:weight_NAC-eMod} and Fig.~\ref{chap3:fig:error_NAC-eMod}.
-This is because stabilizing function $-\alpha\rho\Vert\tilde z\Vert\hat\theta$ can be decreased, once the tracking error $\tilde z$ is sufficiently regulated.
-However, the bias of the weights to the origin still exists as described in Fig.~\ref{chap3:fig:weight_NAC-eMod} (\ie The smaller weight norms are observed as $\rho$ is increased.).
-Therefore, similar to NAC-L2, the biased weights produce insufficient control input, resulting in a relatively larger square root of tracking ISE compared to NAC-CO as described in Table \ref{chap3:table:error_norm}.
+This is because stabilizing function $-\alpha\rho\Vert\tilde z\Vert\hat\theta$ can be decreased once the tracking error $\tilde z$ is sufficiently regulated.
+However, the bias of the weights to the origin still exists as described in Fig.~\ref{chap3:fig:weight_NAC-eMod} (\ie smaller weight norms are observed as $\rho$ is increased.).
+Therefore, similar to NAC-L2, the biased weights produce insufficient control input, resulting in a relatively larger square root of tracking ISE than that of CoNAC, as described in Table \ref{chap3:table:error_norm}.
 
-Finally, the weight norm of NAC-CO is smaller than those of NAC-L2 and NAC-eMod as shown in Fig.~\ref{chap3:fig:weight_NAC-CO} with better tracking performances.
-Even if the large $\beta_j$ is provided, NAC-CO can adjust the adaptation direction to satisfy the weight norm constraints faster, according to \eqref{chap3:eq:adap_L}.
-Therefore, the lowest dependency on the update rate $\beta_j$ is observed in NAC-CO as shown in Fig.~\ref{chap3:fig:weight_NAC-CO} and Fig.~\ref{chap3:fig:error_NAC-CO}.
-Note that $\beta_j$ of NAC-CO is the update rate for Lagrange multipliers while $\lambda$ and $\rho$ are the coefficients of the stabilizing function that generates the biases of the weights.
+Finally, the weight norm of CoNAC is smaller than those of NAC-L2 and NAC-eMod as shown in Fig.~\ref{chap3:fig:weight_CoNAC} with better tracking performances.
+Even if the large $\beta_j$ is provided, CoNAC can adjust the adaptation direction to satisfy the weight norm constraints faster, according to \eqref{chap3:eq:adap_L}.
+Therefore, the lowest dependency on the update rate $\beta_j$ is observed in CoNAC as shown in Fig.~\ref{chap3:fig:weight_CoNAC} and Fig.~\ref{chap3:fig:error_CoNAC}.
+Note that $\beta_j$ of CoNAC is the update rate for Lagrange multipliers while $\lambda$ and $\rho$ are the coefficients of the stabilizing function that generates the biases of the weights.
 However, considering the implementation using a digital computer, excessively large $\beta_j$ should be avoided.
 
-The details of the satisfaction of the weight norm constraints are shown in Fig.~\ref{chap3:fig:weight_multiplier NAC-CO} for NAC-CO with $\beta_j=0.001$.
+The details of the satisfaction of the weight norm constraints are shown in Fig.~\ref{chap3:fig:weight_multiplier CoNAC} for CoNAC with $\beta_j=0.001$.
 As the weight norms of each layer reach the constraint boundary, the corresponding Lagrange multipliers are generated.
 Using the Lagrange multipliers, the adaptation direction is adjusted toward the constraint satisfactory point.
 The Lagrange multipliers disappear when the constraints are satisfied, and the weights are adapted to optimize the original objective function without weight bias.
@@ -745,26 +745,26 @@ The Lagrange multipliers disappear when the constraints are satisfied, and the w
 \begin{figure}[!t]      
     \centering
     \subfloat[Weight norm]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig12.eps}%
-    \label{chap3:fig:weight_norms NAC-CO}}
+    \label{chap3:fig:weight_norms CoNAC}}
     \vfill
     \subfloat[Lagrange multipliers]{\includegraphics[width=.85\linewidth]{imgs/Chap3/fig11.eps}%
-    \label{chap3:fig:multipliers NAC-CO}}
-    \caption{Weight norms and Lagrange multipliers of NAC-CO ($\beta=0.001$).}
-    \label{chap3:fig:weight_multiplier NAC-CO}
+    \label{chap3:fig:multipliers CoNAC}}
+    \caption{Weight norms and Lagrange multipliers of CoNAC ($\beta=0.001$).}
+    \label{chap3:fig:weight_multiplier CoNAC}
 \end{figure}
 
-Furthermore, it is important to note that NAC-CO shows enhanced tracking performance with smaller weights than NAC-L2 and NAC-eMod.
-It implies that the weights in NAC-CO are approached to the different local optimal solution point from those of NAC-L2 and NAC-eMod.
-Therefore, if the physical analysis of the system is available to predict the feasible maximum control inputs, NAC-CO can find the local optimal solution without unnecessary large control input by imposing the proper weight norm constraints.
+Furthermore, it is important to note that CoNAC shows enhanced tracking performance with smaller weights than NAC-L2 and NAC-eMod.
+This implies that the weights in CoNAC approach the different local optimal solution points from those of NAC-L2 and NAC-eMod.
+Therefore, if the physical analysis of the system is available to predict the feasible maximum control inputs, CoNAC can find the local optimal solution without unnecessary large control input by imposing the proper weight norm constraints.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this chapter, a Constrained Optimization-based Neuro-Adaptive Controller  \allowbreak (CoNAC) with SHLNN and weight norm constraints is presented for the uncertain Euler-Lagrange systems.
+In this chapter, the CoNAC with SHLNN and weight norm constraint is presented for the uncertain Euler-Lagrange systems.
 The boundedness of the weights is handled by formulating a constrained optimization problem with weight norm inequality constraints.
 Using the constrained optimization approach, the adaptation laws of the weights and Lagrange multipliers are derived.
 The boundedness of the tracking error and the weight estimation are analyzed via Lyapunov analysis.
 The simulation results demonstrated that the proposed controller outperforms the existing methods in terms of tracking performance and parameter dependency.
-In next chapter, CoNAC will be extended to handle input constraints, substituting SHLNN with DNN.
+In next chapter, CoNAC will be extended to handle input constraints and DNN.
 

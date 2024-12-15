@@ -5,7 +5,7 @@
 \chapter{Preliminaries} \label{chapter2}
 
 This chapter presents the necessary background and mathematical tools required for the subsequent chapters.
-Since the proposed controller (Constrained Optimization-based Neuro-Adaptive Controller (CoNAC)) is based on adaptive control and constrained optimization theory and deep neural networks (DNNs), the chapter covers the following topics: control theory, constrained optimization theory, matrix algebra, and the approximation theory.
+Since the proposed controller (constrained optimization-based neuro-adaptive controller (CoNAC)) is based on adaptive control and constrained optimization theory and deep neural networks (DNNs), this chapter covers the following topics: control theory, constrained optimization theory, and the approximation theory.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Related Control Theory} \label{chap2:sec:ctrl}
@@ -20,7 +20,7 @@ Using system matrices $M(q)\in\R^{n\times n}$, $C(q,\dot{q})\in\R^{n\times n}$, 
     .
     \label{chap2:eq:EL}
 \end{equation}
-The Euler-Lagrange system can be transformed into a second-order control-affine system by defining the state variables $x\triangleq [q,\dot{q}]^T\in\R^{2n}$ and the control input $u\in\R^n$ as
+The Euler-Lagrange system can be transformed into a second-order control-affine system by defining the state variables $x_1\triangleq q$ and $x_2\triangleq \dot q$ as
 \begin{equation}
     \begin{aligned}
         \dot{x}_1 &= x_2,\\
@@ -30,14 +30,14 @@ The Euler-Lagrange system can be transformed into a second-order control-affine 
 \end{equation}
 
 Using backstepping control approach, the system can be broken down into lower dimension subsystem by generating the auxiliary control input to regulate the higher dimension original system \cite{RN7}.
-Since the Euler-Lagrange systems can be transformed into second-order control-affine system, consider second-order control-affine system represented as follows:
+For simplicity, rewrite the system \eqref{chap2:eq:EL} as follows:
 \begin{equation}
   \begin{aligned}
     \dot x_1 =& x_2\\
     \dot x_2 =& f(x,t)+g(x,t)u
   \end{aligned}
 \end{equation}
-where $x\triangleq [x_1,x_2]^T\in\R^{2n}$ denotes state variables, $u$ denotes the control input, $f(x,t)$ and $g(x,t)$ are system functions.
+where $x\triangleq [x_1,x_2]^T\in\R^{2n}$, $u\triangleq \tau$, $f(x,t)\triangleq M^{-1}(-Cx_2-G-F)$ and $g(x,t)\triangleq M^{-1}$ are system functions.
 Then considering tracking error with a given smooth reference signal $r_1(t)\in\R^n$, the tracking error and its time-derivative are defined as
 \begin{equation}
   e_1\triangleq x_1-r_1,\quad \dot e_1= \dot x_1-\dot r_1=x_2-\dot r_1
@@ -47,7 +47,7 @@ Using the Lyapunov function defined as $\mathcal V_1\triangleq (1/2)e_1^Te_1$, t
 \begin{equation}
   \dot {\mathcal V}_1 =e_1^T\dot e_1=e_1^T(x_2-\dot r_1)
 \end{equation}
-The auxiliary control input $r_2\in\R^n$ which realizes $\dot{\mathcal V}_1<0$ can be defined as $r_2\triangleq \dot r -k_1e_1$ for some positive constant $k_1\in\R_{>0}$.
+The auxiliary control input $r_2\in\R^n$ which realizes $\dot{\mathcal V}_1<0$ can be defined as $r_2\triangleq \dot r_1 -k_1e_1$ for some constant $k_1\in\R_{>0}$.
 Let $e_2\triangleq x_2-r_2=x_2-(-k_1e_1+\dot r_1)$ denote the tracking error of $x_2$.
 
 Then, the time-derivative of the Lyapunov function $\mathcal V_2\triangleq (1/2)e_1^Te_1+(1/2)e_2^Te_2$ yields
@@ -66,19 +66,18 @@ Then, the time-derivative of the Lyapunov function $\mathcal V_2\triangleq (1/2)
 
 Therefore, the stabilizing control input $u$ that realizes $\dot {\mathcal V}_2=-k_1e_1^Te_1-k_2e_2^Te_2<0$ can be designed as
 \begin{equation}
-  u\triangleq {1\over g(x,t)} (-e_1 -k_2e_2 +\dot r_2 -f)
+  u\triangleq {1\over g} (-e_1 -k_2e_2 +\dot r_2 -f)
 \end{equation}
 where $k_2\in\R_{>0}$ is a positive constant.
-Note that, the stabilizing control input requires the knowledge of the system functions $f(x,t)$ and $g(x,t)$.
+Note that, the stabilizing control input $u$ requires the knowledge of the system functions $f(x)$ and $g(x)$.
  
 % \subsection{BIBO Stability}
 
 On the other hand, the bounded input bounded output (BIBO) stability defined in Theorem \ref{chap2:thm:BIBO}, will be used for the stability analysis in the later chapters.
 
 \begin{theorem}(see \cite[Theorem 1.9]{RN23})
-
   Let the closed-loop transfer function $H(x)$ be the exponentially stable and strictly proper.
-  Then if $u\in L^\infty$ then $y = H\star u\in L^\infty$, $\dot y\in L^\infty$, and $y$ is uniformly continuous.
+  Then $y = H\star u\in L^\infty$, $\dot y\in L^\infty$, and $y$ is uniformly continuous, if $u\in L^\infty$.
   \label{chap2:thm:BIBO}
 \end{theorem}
 
@@ -140,7 +139,7 @@ Using Proposition \ref{chap2:prop:kron} the gradient with respect the vectorized
   .
 \end{equation}
 
-The readers can refer to \cite[Chapter 7]{RN22} for more details about the \textbf{Kronecker Product} and its properties.
+The reader is referred to \cite[Chapter 7]{RN22} for more details about the \textbf{Kronecker Product} and its properties.
 
 \subsection{Constrained Optimization Theory} 
 
@@ -156,7 +155,7 @@ The general formulation of the constrained optimization problem can be represent
 \end{equation}
 where $f:\mathbb R^n\to\mathbb R$ denotes the objective function, $x\in\mathbb R^n$ denotes the optimization variables, and $\mathcal E$ and $\mathcal I$ are the set of equality and inequality constraints, respectively.
 The objective of the constrained optimization problem is to find the optimal point $x^*$ that locally or globally minimizes the objective function $f(x)$, satisfying the constraints $c_j(x)$.
-Generally, the imposed constraints in an active set $\mathcal A\triangleq\mathcal E \cup \{j\in\mathcal I\ \vert \ c_j\ge0\}$ are supposed to satisfy the Linear Independence Constraint Qualification (LICQ) which is defined as following definition.
+Generally, the imposed constraints in an active set $\mathcal A\triangleq\mathcal E \cup \{j\in\mathcal I\ \vert \ c_j\ge0\}$ are supposed to satisfy the Linear Independence Constraint Qualification (LICQ) which is defined in Definition \ref{chap2:def:LICQ}.
 
 \begin{definition}[see {\cite[Definition 12.1]{RN9}}]
   If the gradients of the active constraints $\nabla c_j(x^*)$, $j\in\mathcal A$, are linearly independent, the set of constraints $\{c_j\}$ satisfies the \textit{Linear Independence Constraint Qualification} (LICQ) at $x^*$.
@@ -174,8 +173,11 @@ Then, the constrained optimization problem can be reformulated as the min-max pr
   .
 \end{equation}
 
-The constrained optimization problem typically attempts to find local solution ($x^*,\lambda^*$) which satisfy the first-order necessary condition of optimality, since there is no guarantee that $L$ is convex function (\ie no guarantee of the global optimality (second-order necessary and sufficient conditions)).
-The first-order necessary condition often known as the \textit{Karush-Kuhn-Tucker conditions} (KKT) for the constrained optimization problem is stated in \cite{RN9} as following Theorem \ref{chap2:thm:KKT}.
+The conditions of optimality are defined by the first-order necessary condition and the second-order necessary and sufficient conditions.
+The first-order necessary condition often known as the \textit{Karush-Kuhn-Tucker conditions} (KKT) is the gradient of the Lagrangian function $L$ at $(x^*,\lambda^*)$ should be zero.
+The second-order necessary condition is that the Hessian matrix of $L$ at $(x^*,\lambda^*)$ should be positive semi-definite while the second-order sufficient condition is that the Hessian matrix should be positive definite (\ie $L$ is convex in the neighbor of the point $(x^*,\lambda^*)$).
+The constrained optimization problem typically attempts to find local solution ($x^*,\lambda^*$) which satisfy the first-order necessary condition of optimality, since there is no guarantee that $L$ is convex function (\ie for the global optimality second-order condition is required).
+The KKT conditions for the constrained optimization problem is stated in \cite{RN9} as following Theorem \ref{chap2:thm:KKT}.
 
 \begin{theorem}[see {\cite[Theorem 12.1]{RN9}}]
   Let $x^*$ be a local solution of the constrained optimization problem. 
@@ -194,7 +196,7 @@ The first-order necessary condition often known as the \textit{Karush-Kuhn-Tucke
   % \end{subequations}
   \label{chap2:thm:KKT}
 \end{theorem}
-For the details of the optimization theory, the readers can refer to \cite{RN9} and \cite{RN1}.
+For the details of the optimization theory, the reader can refer to \cite{RN9} and \cite{RN1}.
 
 \subsection{Preservation of Convexity} 
 
@@ -214,7 +216,7 @@ For the details of the optimization theory, the readers can refer to \cite{RN9} 
   \end{equation}
 \end{definition}
 
-The convexity is very useful property in optimization theory and controller design to find optimal control parameters, since the every local solution points are global solution point \cite[Theorem 2.5]{RN9}.
+The convexity is very useful property in optimization theory and controller design to find optimal control parameters, since the every local solution points are global solution point satisfying the second-order necessary and sufficient conditions \cite[Theorem 2.5]{RN9}.
 Furthermore, if the optimal point of the convex function $f(x)$ is the origin, the opposite direction of the gradient of $f$ at $x$ is the descent direction.
 In other word, the angle between the gradient at $x$ and the vector $x$ is positive as following Lemma \ref{chap2:lem:conv_ang}.
 
@@ -225,7 +227,6 @@ In other word, the angle between the gradient at $x$ and the vector $x$ is posit
 \end{lemma}
 
 \begin{proof}
-  
   Let the origin be the isolated optimal point that minimizes the function $f$ such that $f(x) > f(0)$.
   Then, the following inequality holds:
   \begin{equation}
@@ -241,7 +242,6 @@ In other word, the angle between the gradient at $x$ and the vector $x$ is posit
           .
   \end{equation}
   It implies that the angle between the gradient of $f$ at $x$ and the vector $x$ is positive.
-
 \end{proof}
 
 In \cite[Chapter 2.3.2]{RN1}, the authors stated that the affine functions preserve the convexity of the function as follows:
@@ -264,7 +264,8 @@ This property will be utilized in the stability analysis of the controller in Ch
 % \subsection{Universal Approximation Property} 
 
 The capability of the neural networks (NNs) to approximate functions is based on the approximation theory \cite{RN4}. 
-For NNs with a single hidden layer consisting of the sigmodal activation function, following Theorem \ref{chap2:thm:uni_approx} states that the NNs can approximate any continuous function on a compact set with arbitrary accuracy.
+In other words, the NNs can approximate any sufficiently smooth function on a compact set with arbitrary accuracy according to the universal approximation theorem defined in Theorem \ref{chap2:thm:uni_approx}.
+
 \begin{theorem}[see {\cite{RN48, RN43}}]
 
   Let $f$ be a sufficiently smooth function defined on a compact set $x\in\Omega\in\R^n$.
@@ -272,15 +273,16 @@ For NNs with a single hidden layer consisting of the sigmodal activation functio
 
   \label{chap2:thm:uni_approx}
 \end{theorem}
+
 Besides, the universal approximation property of deep NNs (DNNs) is also reported in \cite{RN70}.
-Generally, the ideal vector is assumed bounded such that $\Vert\theta^*\Vert\le \bar\theta <\infty$.
+Generally, the ideal vector is assumed to be constant and bounded such that $\Vert\theta^*\Vert\le \bar\theta <\infty$.
 
 \subsubsection{Mathematical Expression of Deep Neural Network} \label{chap2:sec:DNN}
 
-Most literature which utilizes the SHLNNs in the controller have shown that the SHLNNs can approximate the uncertain system functions or control law with satisfactory performance index.
+Most literature which utilizes the SHLNNs in the controller, have shown that the SHLNNs can approximate the uncertain system functions or control law with satisfactory performance index.
 However, the DNNs are exponentially more expressive than the SHLNNs to the same accuracy in terms of the total number of weights \cite{RN65}.
-Moreover, the SHLNN is special case of DNN with a single hidden layer.
 Therefore, the DNNs will be utilized in the controller in this thesis.
+Note that the SHLNN can be considered as the simplest architecture of the DNN with a single hidden layer.
 
 \begin{figure}[!t]      
   \centering
@@ -290,7 +292,7 @@ Therefore, the DNNs will be utilized in the controller in this thesis.
   \label{chap2:fig:DNN}
 \end{figure}
 
-Generally, it was open problem to leverage the deep neural networks (DNNs) in controllers due to the nonlinearity and complexity of the DNNs.
+In general, it was open problem to leverage the DNNs in controllers due to the nonlinearity and mathematically complex architecture of the DNNs.
 In \cite{RN13}, Omkar Sudhir Patil \etal proposed the novel DNN based neuro-adaptive control for control-affine nonlinear systems.
 The architecture of the DNN in the controller is described in Fig.~\ref{chap2:fig:DNN} and is defined as 
 \begin{equation}
@@ -324,15 +326,17 @@ For a better understanding, \eqref{chap2:eq:DNN} also can be represented recursi
         V_0^T  x_n,&i=0,
     \end{cases}
 \end{equation}
-where $\Phi_k = \Phi(x_n;\theta)$.
+where $\Phi_i$ denote each layer's output (\ie the last layer's output is equal to the output of DNN such that $\Phi_k = \Phi(x_n;\theta)$).
 
 One of the widely used activation functions for large DNNs is from the ReLU family \cite{RN15}, which effectively avoids the gradient vanishing problem during error backpropagation. 
+The gradient vanishing problem occurs when the gradient of the activation function is close to zero, since the gradient of each layer is multiplied using chain rule to backpropagate the error to the inner layers (\ie deeper NNs have high possibility of gradient vanishing).
 However, for control applications where relatively shallow DNNs are typically sufficient, and the gradient vanishing issue is less severe, the sigmoid function or the hyperbolic tangent function is commonly used as the activation function. 
-These functions simplify stability analysis due to their continuous differentiability, and their outputs and gradients satisfy $\Vert \phi_i(\cdot)\Vert < \infty$ and $\Vert \nabla\phi_i(\cdot)\Vert_F < \infty$. 
+These functions simplify stability analysis due to their continuous differentiability, and their outputs and gradients are bounded such that $\Vert \phi_i(\cdot)\Vert < \infty$ and $\Vert \nabla\phi_i(\cdot)\Vert_F < \infty$. 
 In this thesis, the hyperbolic tangent function $\tanh(\cdot)$ was selected as the activation function (\ie $\sigma(\cdot) = \tanh(\cdot))$, which provides desirable boundedness with $\Vert\sigma(\cdot)\Vert<1$ and $\Vert\nabla\sigma(\cdot)\Vert< 1$.
-Note that, since the gradient vanishing problem is not addressed, the number of hidden layers should be limited under 5 to avoid the gradient vanishing issue.
+Note that, the number of hidden layers should be limited around 5 to avoid the gradient vanishing issue, since the gradient vanishing problem is not addressed.
 
-For simplicity, each layer's weights are vectorized as $\theta_i\triangleq\text{vec}(V_i)\in\R^{\Xi_i}$, where $\Xi_i\triangleq (l_i+1)l_{i+1}$ is the number of weights in the $i\textsuperscript{th}$ layer. The total weight vector $\theta\in\R^{\Xi}$ is defined by augmentation $\theta_i$ for all $i\in \left[0,\cdots,k\right]$ as 
+For simplicity, each layer's weights are vectorized as $\theta_i\triangleq\text{vec}(V_i)\in\R^{\Xi_i}$, where $\Xi_i\triangleq (l_i+1)l_{i+1}$ is the number of weights in the $i\textsuperscript{th}$ layer. 
+The total weight vector $\theta\in\R^{\Xi}$ is defined by augmentation $\theta_i$ for all $i\in \left[0,\cdots,k\right]$ as 
 \begin{equation}
     \theta \triangleq 
     \begin{bmatrix}
@@ -377,4 +381,4 @@ where
     \end{cases},
 \end{equation}
 where $\phi_i\triangleq \phi_i(\Phi_{i-1})$ and $\phi_i'\triangleq \partial \phi_i/\partial \Phi_{i-1}$.
-The gradient can be obtained by applying the chain rule, using Proposition \ref{chap2:prop:kron}.
+The gradient can be obtained using the chain rule and Proposition \ref{chap2:prop:kron}.

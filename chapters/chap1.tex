@@ -13,54 +13,55 @@ Recent advances in deep learning field have shown that neural networks (NNs) can
 A fundamental idea of deep learning is to utilize the well-known universal approximation capability of the NNs, which allows them to approximate any smooth function over a compact set with minimal approximation error. 
 Using this property, various architectures of NNs have been introduced such as convolutional neural networks (CNNs) for image processing, recurrent neural networks (RNNs) for time-series data, and long short-term memory (LSTM) networks for sequential data. 
 These advances have motivated many researchers in the control field to leverage NNs for control design.
-
+ 
 In general, the NNs are used in control design as a parameter estimator or controller.
-In other words, the NNs are trained to produce corresponding output to certain input (\ie real system parameters or desired control input from current system output).
-Therefore, designers need to make a dataset which contains input-output pairs, to train the NNs.
-Random control inputs are typically applied to the system to collect the input-output pairs by exploring in interested operating domain.
-Then, the NNs are trained to approximate the input-output mapping using the dataset using supervised learning methods to solve regression or classification problems (\ie train problem can be transformed into regression or classification problems).
+In other words, the NNs are trained to produce corresponding output to certain input (\eg real system parameters or desired control input from current system output).
+Hence, designers need to make a dataset which contains input-output pairs, to train the NNs.
+Random control inputs are typically applied to collect the input-output pairs by exploring the interested operating domain.
+Then, the NNs are trained to approximate the input-output mapping using the dataset via supervised learning methods to solve regression or classification problems (\ie train problem can be transformed into regression or classification problems).
 For example, as the parameter estimators, 1-Dimensional convolutional neural network (1D-CNN) is used for friction potential estimation \cite{RN109}.
-Similarly, CNN is used to estimate the road conditions (\eg dry or icy condition) by extracting features of road from raw pixel data of built-in camera \cite{RN118}.
+Similarly, CNN is used to estimate the road conditions (\eg dry or icy condition) by extracting features of road image from built-in camera \cite{RN118}.
 A time delay neural network (TDNN) is used to estimate tire-road friction coefficient for vehicle control \cite{RN107}.
 In addition, for motor systems, specific architectures of NNs are used to estimate for the nonlinearity of voltage source inverter and synchronous machine nonlinearity \cite{RN115}.
 
 On the other hand, as the controller, the NNs are trained to imitate given desired control input.
-Thus, designers should design desired controller as the output of input-output pair.
+Thus, designers should design desired controller as the output of input-output pair for training.
 In \cite{RN117, RN116}, CNNs are used to produce steering angle from raw pixel data of camera for vehicle control.
 This literature shows that end-to-end controller can be achieved by using NNs. 
 As an optimal feedforward torque control of synchronous machines, NNs are used to produce optimal reference current \cite{RN112, RN113, RN114}.
 A nonlinear programming (NLP) is utilized to calculate the optimal reference current, and the NNs are trained to approximate the NLP solution.
 The literature reported that the NNs can provide the optimal reference current with less computing cost than existing methods.
-Especially, in \cite{RN114}, multi-objective hyperparameter optimization is utilized to obtain optimal structure of NN regarding floating point operations (FLOPS) and current errors, since motor systems require fast response.
+Especially, in \cite{RN114}, multi-objective hyperparameter optimization is utilized to obtain optimal structure of NN regarding floating point operations (FLOPS) and current errors, since motor systems require high frequency of control input.
 
 In conclusion, if the NNs are well-trained, the NNs can be used as an estimator or controller in the control system, with smaller computing cost (if online-train is not conducted) and sufficient accuracy.
 However, if an operating point goes outside the interested operating domain, the NNs can not provide the accurate estimation or control input.
-This is because, the NNs are train through the dataset which is collected in the interested operating domain.
-Furthermore, the NNs are inherently black-box models, which the input-output mapping is not interpretable \cite{RN16, RN17}.
+This is because, the NNs are train through the dataset which is collected in the interested operating domain (\ie they are trained for interpolation not extrapolation of the dataset).
+Furthermore, the NNs are inherently black-box models whose input-output mapping is not interpretable \cite{RN16, RN17}.
+This causes stability and safety problems of the system, since the possibility of unexpected behavior (\eg excessively large or non-proper control input) of the controller exists.
 Therefore, the stability analysis of the control system with NNs should be conducted to ensure the stability and safety in a perspective of control theory.
 
 \subsubsection{Neuro-Adaptive Control}
 
-From 1980s, as a branch of adaptive control, neuro-adaptive control (NAC) has been developed to leverage the NNs for control design to approximate unknown system dynamics or entire control laws using NNs \cite{RN5, RN48}.
-The adaptive control is a control method that adapts the control parameters to compensate for uncertainties in the system dynamics, since in practice, real systems often exhibit uncertainties due to unmodeled dynamics, parameter variations, or external disturbances which can significantly degrade control performance and lead to instability. 
-To address these challenges, adaptive control methods have been widely employed to ensure robust performance in the presence of system uncertainties \cite{RN6}, \cite{RN10}. 
+From 1980s, as a branch of adaptive control, neuro-adaptive control (NAC) has been developed to leverage the NNs for control design to approximate unknown system dynamics or entire control laws \cite{RN5, RN48}.
+The adaptive control is a control method that adapts the control parameters to compensate for uncertainties in the system dynamics, since in practical real systems often exhibit uncertainties due to unmodeled dynamics, parameter variations, or external disturbances which can significantly degrade control performance and lead to instability. 
+For more details of adaptive control, the reader is referred to \cite{RN6, RN10}. 
 
 These methods typically ensure the stability of the control system in the sense of Lyapunov by conducting Lyapunov stability analysis or deriving adaptation law using Lyapunov stability analysis.
-This approach results in one of remarkable features of NAC methods which is a feedback signal for NN's adaptation is current observed error.
-Since the NN's weights are adapted according to current error which is dependent on current NN's weights, the offline adaptation methods can not be employed.
-This means to adapt weights, online implementation is required.
-This feature makes NAC methods be more close to reinforcement learning methods which attempts to maximize expectation value of reward (\ie reward is generally defined as tracking performance.).
+Like adaptive control, NAC methods also ensure the stability in the sense of Lyapunov. 
+This means that the NAC methods have online adaptation (train) capability with stability guarantees. 
+As shown in the Section \ref{chap1:sec:example}, one of the features that distinguish NAC methods from other control literature which uses NNs is that the feedback signal (error to be backpropagated) for NN’s adaptation is current observed error (i.e. generally it is prediction error of NNs). 
+Since the NN’s weights are adapted according to current observed error which is dependent on current NN’s weights, the offline adaptation methods can not be conducted. 
+This feature makes NAC methods be more close to reinforcement learning methods which attempts to maximize expectation value of reward (i.e. reward is generally defined as tracking performance, not prediction error.).
 
-Since NAC is based on control theory, relatively simpler NN architectures are used due to brief mathematical expression and smaller computing cost.
+Besides, since NAC is based on control theory, relatively simpler NN architectures and adaptation methods are used due to brief mathematical expression.
 Most widely utilized architectures are single hidden layer neural networks (SHLNNs) \cite{RN69, RN18, RN85, RN46, RN95, RN108} and radial basis function neural networks (RBFNNs) \cite{RN89, RN82, RN64, RN71, RN19, RN21}.
-
 Recently, deep NNs (DNNs) are utilized in NAC with stability guarantees \cite{RN13}.
 The DNNs are more effective for complex system approximation than shallow NNs, since it offer greater expressive power with same number of neurons \cite{RN65}.
 Additionally, variations of DNNs, such as long short-term memory (LSTM) networks for time-varying dynamics \cite{RN11} and physics-informed neural networks (PINNs) for leveraging physical system knowledge \cite{RN12}, have further extended the capabilities of neuro-adaptive control systems.
 
-Most of the NAC methods are developed based on conventional control methods.
+These various NNs are typically employed to improve the conventional control methods.
 In \cite{RN69, RN95}, the NNs are used to compensate for system uncertainties in the feedback linearization control.
-Similarly, in \cite{RN85, RN19, RN71, RN80}, the NNs are used to approximate the unknown dynamics in the backstepping control for higher-order system.
+Similarly, the NNs are used to approximate the unknown dynamics in the backstepping control for higher-order system in \cite{RN85, RN19, RN71, RN80}.
 Besides, sliding mode control (SMC), impedance control and admittance control are also developed with NNs in \cite{RN64}, \cite{RN89} and \cite{RN82}, respectively.
 A few of the NAC methods are utilized NNs to approximate the entire control law \cite{RN46}.
 Aforementioned NAC methods have shown the effectiveness of the NNs in control design to approximate system uncertainties and control law.
@@ -70,25 +71,25 @@ In following sections, the limitations are presented, and the research objective
 
 \section{Simple Example of Neuro-Adaptive Control} \label{chap1:sec:example}
 
-A simple example of neuro-adaptive control (NAC) is presented.
+In this section, a simple example of neuro-adaptive control (NAC) is presented.
 Consider a control affine system as follows:
 \begin{equation}
     \dot x = f(x) + h(u)
 \end{equation}
 where $x \in \R^n$ is the state, $f:\R^n\to\R^n$ is the unknown dynamics, $h:\R^n\to\R^n$ is control input saturation function, and $u \in \R^n$ is the control input.
 The objective of this control problem is to design a control law $u$ such that the state $x$ converges to the origin.
-The unknown dynamics $f(x)$ can be approximated via a neural network according to the universal approximation theorem presented in Chapter \ref{chapter2}, as follows:
+The unknown dynamics $f(x)$ can be approximated via NNs according to the universal approximation theorem presented in Theorem \ref{chap2:thm:uni_approx}, as follows:
 \begin{equation}
     f(x) = \Phi(x;\theta^*) + \epsilon
 \end{equation}
-where $\Phi(\cdot)$ denotes a universal approximator, $\theta^*$ is the ideal weight and $\epsilon$ is the approximation error.
+where $\Phi(\cdot)$ denotes a universal approximator (\eg SHLNNs, RBFNNs or DNNs), $\theta^*$ is the ideal weight and $\epsilon$ is the approximation error.
 
 Ignoring control input saturation, a desired feedback-linearization based stabilizing control law can be developed as follows:
 \begin{equation}
     u^* = -\Phi(x;\theta^*) - \epsilon - k x
-    .
 \end{equation}
-Using the estimation of ideal weight, the control law can be approximated as follows:
+where $k$ is a positive control gain. 
+Using the estimation of ideal weight $\hat\theta$, the control law can be approximated as follows:
 \begin{equation}
     u = -\Phi(x;\hat\theta) - k x
 \end{equation}
@@ -100,8 +101,8 @@ The closed-loop dynamics can be described as follows:
 where $\Phi^* = \Phi(x;\theta^*)$ and $\hat\Phi = \Phi(x;\hat\theta)$.
 
 The adaptation law can be derived based on the Lyapunov stability analysis.
-Assume that the effect of control input saturation is ignored to simplify the derivation.
-Then, taking the time derivative of the Lyapunov function candidate $\mathcal V = (1/2)x^Tx+(1/2\alpha)\tilde\theta^T\tilde\theta$ where $\tilde\theta\triangleq \hat\theta-\theta^*$, yields:
+To simplify the derivation, ignore the control input saturation.
+Then, taking the time derivative of the Lyapunov function candidate $\mathcal V = (1/2)x^Tx+(1/2\alpha)\tilde\theta^T\tilde\theta$ where $\tilde\theta\triangleq \hat\theta-\theta^*$ and $\alpha\in\R_{>0}$ denotes adaptation gain (learning rate), yields:
 \begin{equation}
     \begin{aligned}
         \dot{\mathcal V}
@@ -118,7 +119,7 @@ Then, taking the time derivative of the Lyapunov function candidate $\mathcal V 
         + x^T\Delta
     \end{aligned}
 \end{equation}
-where $\mathcal O (\Vert\tilde\theta\Vert^2)$ is the higher order term, and $\Delta$ is the lumped disturbance term.
+where $\mathcal O (\Vert\tilde\theta\Vert^2)$ is the higher order term, and $\Delta\triangleq \mathcal O(\cdot)+\epsilon$ is the lumped disturbance term.
 Assuming that $\Delta$ is sufficiently small, the adaptation law which realizes $\dot{\mathcal V}<0$ can be derived as follows:
 \begin{equation}
     \dot{\hat\theta} = \alpha {\partial \hat\Phi\over\partial \hat\theta}^T x
@@ -126,28 +127,24 @@ Assuming that $\Delta$ is sufficiently small, the adaptation law which realizes 
 \end{equation}
 However, $\Delta$ can dominate the system when an initial (or on certain domain) estimation error $\tilde\theta$ is large.
 In result, the parameter drift can occur due to $\Delta$ (\ie the parameter estimation $\hat\theta$ increases to infinity over time (see \cite{RN6})).
-In practical physical applications, the parameter drift is crucial since it can lead to limitation of actuators.
-The control input saturation destructs the system performance and can lead to the system instability.
-Moreover, the amplitude of NNs' output is generally dependent on weights' amplitude, control input saturation can not be ignored.
+In practical physical applications, the parameter drift is crucial since it makes the control input reach to limitation of actuators (\ie the amplitude of control input is dependent on weights).
+This can destruct the system performance and lead to the system instability.
 
 \section{Research Objective} \label{chap1:sec:research objective}
 
 To address the above issues (boundedness of weights and control input saturation), constrained optimization offers a promising approach. 
-By formulating the neuro-adaptive control problem as an optimization problem with constraints, it is possible to adapt the NN weights while minimizing an objective function (e.g., tracking error) subject to constraints regarding with both weight boundedness and control input saturation. 
-Constrained optimization provides a theoretical framework for defining optimality and presents numerical methods for finding solutions that satisfy the constraints \cite{RN9}.
-To the best of the authors’ knowledge, no prior work has applied constrained optimization to adaptive control systems with real-time weight adaptation.
+By formulating the NAC problem as an optimization problem with constraints, it is possible to adapt the NN weights (minimize an objective function (e.g., tracking error)) satisfying the constraints regarding with both weight boundedness and control input saturation. 
+Constrained optimization provides a theoretical framework for defining optimality of the problem and presents numerical methods for finding solutions \cite{RN9}.
+To the best of the authors’ knowledge, no prior work has applied constrained optimization theory to adaptive control systems with real-time weight adaptation.
 
-This gap suggests that constrained optimization could be
-key to addressing both weight norm boundedness and input
-constraints in a unified, theoretically grounded framework,
-particularly in real-time neuro-adaptive control.
-In summary, the objective of this thesis is to develop a neuro-adaptive controller that can ensures boundedness of the weights and satisfaction of the input saturation via optimization method.
+This gap suggests that constrained optimization could be key to addressing both weight norm boundedness and input constraints in a unified, theoretically grounded framework, particularly in real-time NAC.
+In summary, the objective of this thesis is to develop a NAC that can ensures boundedness of the weights and satisfaction of the input saturation via optimization method.
 
 \section{Outline of the Thesis} 
 
 The remainder of this thesis is organized as follows. 
 Preliminaries for the thesis are presented in Chapter \ref{chapter2}.
-Using the preliminaries the proposed Constrained Optimization-based Neuro-Adaptive Controller (CoNAC) is presented over Chapter \ref{chapter3} and Chapter \ref{chapter4}.
+Using the preliminaries the proposed constrained optimization-based neuro-adaptive controller (CoNAC) is presented over Chapter \ref{chapter3} and Chapter \ref{chapter4}.
 Each chapter, at first, introduces the exiting methods concerning weight boundedness, and input saturation respectively.
 Then, the details of the proposed CoNAC are presented, and simulation results are reported.
 Finally, Chapter \ref{chapter5} concludes the thesis and suggests future work.

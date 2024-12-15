@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.11)  15 DEC 2024 01:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.11)  15 DEC 2024 17:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/dding/Desktop/Master's Thesis/Dissertation.tex"
-(/Users/dding/Desktop/Master's Thesis/Dissertation.tex
+**"/Users/dding/Git Projects/Master's Thesis/Dissertation.tex"
+(/Users/dding/Git Projects/Master's Thesis/Dissertation.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
 (./gist.cls
@@ -515,32 +515,32 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 181.
-LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 181.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 180.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 180.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
 
-Overfull \vbox (152.08342pt too high) detected at line 181
+Overfull \vbox (152.08342pt too high) detected at line 180
  []
 
 
@@ -548,24 +548,24 @@ Overfull \vbox (152.08342pt too high) detected at line 181
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \vbox (140.11227pt too high) detected at line 181
+Overfull \vbox (140.11227pt too high) detected at line 180
  []
 
 
 
 [2]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 181.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 181.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 180.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 180.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 181.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 180.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 [3]
-Underfull \vbox (badness 4291) detected at line 181
+Underfull \vbox (badness 4291) detected at line 180
  []
 
 
@@ -613,7 +613,7 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedRightParindent=\skip99
 \JustifyingParindent=\skip100
 )
-Package hyperref Info: Link coloring OFF on input line 181.
+Package hyperref Info: Link coloring OFF on input line 180.
 \autonum@environmentWidth=\skip101
  (./misc/eabstract.tex)
 
@@ -630,11 +630,6 @@ Package hyperref Info: Link coloring OFF on input line 181.
 
 
 [4] (./Dissertation.lof
-Overfull \hbox (8.0763pt too wide) in paragraph at lines 6--6
- [][] [][]\OT1/cmr/m/n/12 Architecture of the Con-strained Optimization-based Neuro-Adaptive Con- 
- []
-
-
 Overfull \hbox (8.0763pt too wide) in paragraph at lines 22--22
  [][] [][]\OT1/cmr/m/n/12 Architecture of the Con-strained Optimization-based Neuro-Adaptive Con- 
  []
@@ -666,19 +661,19 @@ l.35
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 
+l.55 
       [2]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \end{equation}
+l.78 \end{equation}
                     [3]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 108.
+(amsmath)                 on input line 109.
 
 
 
@@ -686,59 +681,59 @@ Package amsmath Warning: Foreign command \over;
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \end{equation}
+l.121 \end{equation}
                      [4
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 \end{equation}
+l.121 \end{equation}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 \end{equation}
+l.121 \end{equation}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 \end{equation}
+l.121 \end{equation}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.120 \end{equation}
+l.121 \end{equation}
                     ]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \begin{equation}
+l.124 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \begin{equation}
+l.124 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \begin{equation}
+l.124 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \begin{equation}
+l.124 \begin{equation}
                       
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 
+l.142 
        [5
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.145 
+l.142 
       ]) (./chapters/chap2.tex
 
 [6]
@@ -748,388 +743,398 @@ Chapter 2.
 [7
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.42 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.42 \begin{equation}
-                     ]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+l.45 \end{equation}
+                   ]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.54 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.54 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.54 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.54 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.68 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.68 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.68 \begin{equation}
                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.68 \begin{equation}
                      
 
-[8]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.95   \item $
+              x_{(i)}$ denotes the $i$-th element of vector $x\in\mathbb R^n$.]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \begin{equation}
+l.102 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \begin{equation}
+l.102 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \begin{equation}
+l.102 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \begin{equation}
+l.102 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114   \begin{equation}
+l.113   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114   \begin{equation}
+l.113   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114   \begin{equation}
+l.113   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114   \begin{equation}
+l.113   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130   \begin{equation}
+l.129   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130   \begin{equation}
+l.129   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130   \begin{equation}
+l.129   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130   \begin{equation}
+l.129   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \begin{equation}
+l.137 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \begin{equation}
+l.137 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \begin{equation}
+l.137 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \begin{equation}
+l.137 \begin{equation}
                       
 
 [9]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{equation}
+l.147 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{equation}
+l.147 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{equation}
+l.147 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{equation}
+l.147 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 \begin{equation}
+l.166 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 \begin{equation}
+l.166 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 \begin{equation}
+l.166 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 \begin{equation}
+l.166 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \begin{equation}
+l.171 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \begin{equation}
+l.171 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \begin{equation}
+l.171 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \begin{equation}
+l.171 \begin{equation}
                       
 
 [10]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184   \begin{equation}
+l.186   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184   \begin{equation}
+l.186   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184   \begin{equation}
+l.186   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184   \begin{equation}
+l.186   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203   \begin{equation}
+l.205   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203   \begin{equation}
+l.205   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203   \begin{equation}
+l.205   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203   \begin{equation}
+l.205   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211   \begin{equation}
+l.213   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211   \begin{equation}
+l.213   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211   \begin{equation}
+l.213   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211   \begin{equation}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.231   \begin{equation}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.231   \begin{equation}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.231   \begin{equation}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.231   \begin{equation}
+l.213   \begin{equation}
                         
 
 [11]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232   \begin{equation}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232   \begin{equation}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232   \begin{equation}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232   \begin{equation}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.251   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.251   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.251   \begin{equation}
                         
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.251   \begin{equation}
                         
 
 [12]
-<imgs/NN.drawio.png, id=426, 3222.0375pt x 1314.9125pt>
+<imgs/NN.drawio.png, id=428, 3222.0375pt x 1314.9125pt>
 File: imgs/NN.drawio.png Graphic file (type png)
 <use imgs/NN.drawio.png>
-Package pdftex.def Info: imgs/NN.drawio.png  used on input line 288.
+Package pdftex.def Info: imgs/NN.drawio.png  used on input line 290.
 (pdftex.def)             Requested size: 374.86774pt x 152.96735pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.296 \begin{equation}
+l.298 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.296 \begin{equation}
+l.298 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.296 \begin{equation}
+l.298 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.296 \begin{equation}
+l.298 \begin{equation}
                       
 
 [13 <./imgs/NN.drawio.png>]
 
-[14
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.368 \end{equation}
-                    ]) (./chapters/chap3.tex
+[14]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.340 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.362 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.362 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.362 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.362 \begin{equation}
+                      ) (./chapters/chap3.tex
 
-[15
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.5 \chapter
-            {]
+[15]
 Chapter 3.
 
 
@@ -1138,274 +1143,271 @@ Chapter 3.
 ]
 
 [17]
-<imgs/ControllerChap3.drawio.png, id=481, 5972.3125pt x 1957.3125pt>
+<imgs/ControllerChap3.drawio.png, id=484, 5972.3125pt x 1957.3125pt>
 File: imgs/ControllerChap3.drawio.png Graphic file (type png)
 <use imgs/ControllerChap3.drawio.png>
-Package pdftex.def Info: imgs/ControllerChap3.drawio.png  used on input line 117.
+Package pdftex.def Info: imgs/ControllerChap3.drawio.png  used on input line 115.
 (pdftex.def)             Requested size: 396.91324pt x 130.06706pt.
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \begin{equation}
+                      
 
 [18]
 
 [19
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.159 \begin{equation}
-                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.159 \begin{equation}
-                       <./imgs/ControllerChap3.drawio.png>]
+l.167 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.159 \begin{equation}
-                      
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.167 
+       <./imgs/ControllerChap3.drawio.png>]
 
 [20
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.199 \end{equation}
+l.213 \end{equation}
                     ]
 
 [21
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.271     \end{align}
+l.268     \end{align}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.271     \end{align}
+l.268     \end{align}
                      ]
 
 [22
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.293 \begin{equation}
+l.294 \begin{equation}
                       ]
-<imgs/cstr_weight.drawio.png, id=545, 2710.125pt x 1766.6pt>
+<imgs/cstr_weight.drawio.png, id=547, 2710.125pt x 1766.6pt>
 File: imgs/cstr_weight.drawio.png Graphic file (type png)
 <use imgs/cstr_weight.drawio.png>
-Package pdftex.def Info: imgs/cstr_weight.drawio.png  used on input line 357.
+Package pdftex.def Info: imgs/cstr_weight.drawio.png  used on input line 361.
 (pdftex.def)             Requested size: 220.50885pt x 143.72998pt.
 
 
 [23
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.370 \end{equation}
+l.374 \end{equation}
                     ]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 \begin{equation}
+l.378 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 \begin{equation}
+l.378 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 \begin{equation}
+l.378 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 \begin{equation}
+l.378 \begin{equation}
                       
 
 [24
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.410 
+l.414 
        <./imgs/cstr_weight.drawio.png>]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \begin{equation}
+l.416 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \begin{equation}
+l.416 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \begin{equation}
+l.416 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \begin{equation}
+l.416 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \begin{equation}
+l.424 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \begin{equation}
+l.424 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \begin{equation}
+l.424 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \begin{equation}
+l.424 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.437 \begin{equation}
+l.441 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.437 \begin{equation}
+l.441 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.437 \begin{equation}
+l.441 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.437 \begin{equation}
+l.441 \begin{equation}
                       
 
 [25]
 
 [26
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.550 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+l.558 \end{remark}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.550 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+l.558 \end{remark}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.550 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+l.558 \end{remark}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.550 
-      ]
-<imgs/RobotModel.drawio.png, id=595, 3312.375pt x 2429.075pt>
+l.558 \end{remark}
+                  ]
+<imgs/RobotModel.drawio.png, id=596, 3312.375pt x 2429.075pt>
 File: imgs/RobotModel.drawio.png Graphic file (type png)
 <use imgs/RobotModel.drawio.png>
 Package pdftex.def Info: imgs/RobotModel.drawio.png  used on input line 568.
 (pdftex.def)             Requested size: 330.76328pt x 242.55109pt.
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.599 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.599 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.599 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.599 \begin{equation}
+                      
 
 [27 <./imgs/RobotModel.drawio.png>]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.599 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.625 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.625 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.625 \begin{equation}
                       
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.625 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
                       
 
 [28]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.637 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.637 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.637 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.18}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.637 \begin{equation}
-                      
-<imgs/BoxWhisker.drawio.png, id=614, 11713.7625pt x 5902.05pt>
+<imgs/BoxWhisker.drawio.png, id=612, 11713.7625pt x 5902.05pt>
 File: imgs/BoxWhisker.drawio.png Graphic file (type png)
 <use imgs/BoxWhisker.drawio.png>
 Package pdftex.def Info: imgs/BoxWhisker.drawio.png  used on input line 660.
 (pdftex.def)             Requested size: 374.86774pt x 188.85144pt.
-
-
-[29]
 Package epstopdf Info: Source file: <imgs/Chap3/fig9.eps>
 (epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 129009 bytes
@@ -1415,7 +1417,7 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig9.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig9-eps-converted-to.pdf imgs/Chap3/fig9.eps>
 (epstopdf)             \includegraphics on input line 697.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig9-eps-converted-to.pdf, id=622, 497.86pt x 190.7125pt>
+<imgs/Chap3/fig9-eps-converted-to.pdf, id=615, 497.86pt x 190.7125pt>
 File: imgs/Chap3/fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig9-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig9-eps-converted-to.pdf  used on input line 697.
@@ -1429,7 +1431,7 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig10.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig10-eps-converted-to.pdf imgs/Chap3/fig10.eps>
 (epstopdf)             \includegraphics on input line 700.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig10-eps-converted-to.pdf, id=623, 497.86pt x 190.7125pt>
+<imgs/Chap3/fig10-eps-converted-to.pdf, id=616, 497.86pt x 190.7125pt>
 File: imgs/Chap3/fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig10-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig10-eps-converted-to.pdf  used on input line 700.
@@ -1443,11 +1445,14 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig8.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig8-eps-converted-to.pdf imgs/Chap3/fig8.eps>
 (epstopdf)             \includegraphics on input line 703.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig8-eps-converted-to.pdf, id=624, 497.86pt x 190.7125pt>
+<imgs/Chap3/fig8-eps-converted-to.pdf, id=617, 497.86pt x 190.7125pt>
 File: imgs/Chap3/fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig8-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig8-eps-converted-to.pdf  used on input line 703.
 (pdftex.def)             Requested size: 374.86774pt x 143.60147pt.
+
+
+[29]
 Package epstopdf Info: Source file: <imgs/Chap3/fig6.eps>
 (epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 156212 bytes
@@ -1457,7 +1462,7 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig6.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig6-eps-converted-to.pdf imgs/Chap3/fig6.eps>
 (epstopdf)             \includegraphics on input line 712.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig6-eps-converted-to.pdf, id=625, 511.9125pt x 190.7125pt>
+<imgs/Chap3/fig6-eps-converted-to.pdf, id=623, 511.9125pt x 190.7125pt>
 File: imgs/Chap3/fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig6-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig6-eps-converted-to.pdf  used on input line 712.
@@ -1471,7 +1476,7 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig7.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig7-eps-converted-to.pdf imgs/Chap3/fig7.eps>
 (epstopdf)             \includegraphics on input line 715.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig7-eps-converted-to.pdf, id=626, 511.9125pt x 190.7125pt>
+<imgs/Chap3/fig7-eps-converted-to.pdf, id=624, 511.9125pt x 190.7125pt>
 File: imgs/Chap3/fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig7-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig7-eps-converted-to.pdf  used on input line 715.
@@ -1485,7 +1490,7 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig5.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig5-eps-converted-to.pdf imgs/Chap3/fig5.eps>
 (epstopdf)             \includegraphics on input line 718.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig5-eps-converted-to.pdf, id=627, 511.9125pt x 190.7125pt>
+<imgs/Chap3/fig5-eps-converted-to.pdf, id=625, 511.9125pt x 190.7125pt>
 File: imgs/Chap3/fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig5-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig5-eps-converted-to.pdf  used on input line 718.
@@ -1495,8 +1500,6 @@ Package pdftex.def Info: imgs/Chap3/fig5-eps-converted-to.pdf  used on input lin
 [30 <./imgs/BoxWhisker.drawio.png>]
 
 [31 <./imgs/Chap3/fig9-eps-converted-to.pdf> <./imgs/Chap3/fig10-eps-converted-to.pdf> <./imgs/Chap3/fig8-eps-converted-to.pdf>]
-
-[32 <./imgs/Chap3/fig6-eps-converted-to.pdf> <./imgs/Chap3/fig7-eps-converted-to.pdf> <./imgs/Chap3/fig5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <imgs/Chap3/fig12.eps>
 (epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 152884 bytes
@@ -1506,7 +1509,7 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig12.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig12-eps-converted-to.pdf imgs/Chap3/fig12.eps>
 (epstopdf)             \includegraphics on input line 748.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig12-eps-converted-to.pdf, id=692, 496.85625pt x 184.69pt>
+<imgs/Chap3/fig12-eps-converted-to.pdf, id=670, 496.85625pt x 184.69pt>
 File: imgs/Chap3/fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig12-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig12-eps-converted-to.pdf  used on input line 748.
@@ -1520,25 +1523,25 @@ Package epstopdf Info: Source file: <imgs/Chap3/fig11.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig11-eps-converted-to.pdf imgs/Chap3/fig11.eps>
 (epstopdf)             \includegraphics on input line 751.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap3/fig11-eps-converted-to.pdf, id=693, 517.935pt x 185.69376pt>
+<imgs/Chap3/fig11-eps-converted-to.pdf, id=671, 517.935pt x 185.69376pt>
 File: imgs/Chap3/fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap3/fig11-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap3/fig11-eps-converted-to.pdf  used on input line 751.
 (pdftex.def)             Requested size: 374.86774pt x 134.40492pt.
 
 
-[33 <./imgs/Chap3/fig12-eps-converted-to.pdf> <./imgs/Chap3/fig11-eps-converted-to.pdf>]) (./chapters/chap4.tex
+[32 <./imgs/Chap3/fig6-eps-converted-to.pdf> <./imgs/Chap3/fig7-eps-converted-to.pdf> <./imgs/Chap3/fig5-eps-converted-to.pdf>]) (./chapters/chap4.tex
 
-[34]
+[33 <./imgs/Chap3/fig12-eps-converted-to.pdf> <./imgs/Chap3/fig11-eps-converted-to.pdf>]
 Chapter 4.
 
 
-[35
+[34
 
 ]
 
-[36]
-<imgs/ControllerChap4.drawio.png, id=741, 5972.3125pt x 1957.3125pt>
+[35]
+<imgs/ControllerChap4.drawio.png, id=735, 5972.3125pt x 1957.3125pt>
 File: imgs/ControllerChap4.drawio.png Graphic file (type png)
 <use imgs/ControllerChap4.drawio.png>
 Package pdftex.def Info: imgs/ControllerChap4.drawio.png  used on input line 84.
@@ -1565,28 +1568,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3})
 l.92 \begin{equation}
                      
 
-[37
+[36
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.98 \end{equation}
                     <./imgs/ControllerChap4.drawio.png>]
 
-[38]
+[37]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.147 \end{align}
                  
 
-[39
+[38
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.208 
       ]
 
-[40
+[39
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1623,33 +1626,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.12}
 l.311 \begin{equation}
                       
 
-[41]
-<imgs/cstr_input_bound.drawio.png, id=806, 2810.5pt x 1836.8625pt>
+[40]
+<imgs/cstr_input_bound.drawio.png, id=800, 2810.5pt x 1836.8625pt>
 File: imgs/cstr_input_bound.drawio.png Graphic file (type png)
 <use imgs/cstr_input_bound.drawio.png>
 Package pdftex.def Info: imgs/cstr_input_bound.drawio.png  used on input line 350.
 (pdftex.def)             Requested size: 220.50885pt x 144.09312pt.
 
 
-[42 <./imgs/cstr_input_bound.drawio.png>]
-<imgs/cstr_input_norm.drawio.png, id=815, 2308.625pt x 1766.6pt>
+[41 <./imgs/cstr_input_bound.drawio.png>]
+<imgs/cstr_input_norm.drawio.png, id=809, 2308.625pt x 1766.6pt>
 File: imgs/cstr_input_norm.drawio.png Graphic file (type png)
 <use imgs/cstr_input_norm.drawio.png>
 Package pdftex.def Info: imgs/cstr_input_norm.drawio.png  used on input line 423.
 (pdftex.def)             Requested size: 220.50885pt x 168.71829pt.
 
 
-[43 <./imgs/cstr_input_norm.drawio.png>]
-<imgs/spaces.drawio.png, id=834, 4918.375pt x 2097.8375pt>
+[42 <./imgs/cstr_input_norm.drawio.png>]
+<imgs/spaces.drawio.png, id=827, 4918.375pt x 2097.8375pt>
 File: imgs/spaces.drawio.png Graphic file (type png)
 <use imgs/spaces.drawio.png>
 Package pdftex.def Info: imgs/spaces.drawio.png  used on input line 464.
 (pdftex.def)             Requested size: 396.91324pt x 169.27089pt.
 
 
-[44 <./imgs/spaces.drawio.png>]
+[43 <./imgs/spaces.drawio.png>]
 
-[45
+[44
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1736,9 +1739,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.19}
 l.564 \begin{equation}
                       
 
-[46]
+[45]
 
-[47
+[46
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1795,7 +1798,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.21}
 l.687 \begin{equation}
                       
 
-[48
+[47
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1814,18 +1817,18 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig13.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig13-eps-converted-to.pdf imgs/Chap4/fig13.eps>
 (epstopdf)             \includegraphics on input line 729.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig13-eps-converted-to.pdf, id=903, 563.10374pt x 282.05376pt>
+<imgs/Chap4/fig13-eps-converted-to.pdf, id=897, 563.10374pt x 282.05376pt>
 File: imgs/Chap4/fig13-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig13-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig13-eps-converted-to.pdf  used on input line 729.
 (pdftex.def)             Requested size: 374.86774pt x 187.76996pt.
 
 
-[49]
+[48]
 
-[50 <./imgs/Chap4/fig13-eps-converted-to.pdf>]
+[49 <./imgs/Chap4/fig13-eps-converted-to.pdf>]
 
-[51]
+[50]
 Package epstopdf Info: Source file: <imgs/Chap4/fig1.eps>
 (epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 142565 bytes
@@ -1835,7 +1838,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig1.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig1-eps-converted-to.pdf imgs/Chap4/fig1.eps>
 (epstopdf)             \includegraphics on input line 814.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig1-eps-converted-to.pdf, id=939, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig1-eps-converted-to.pdf, id=932, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig1-eps-converted-to.pdf  used on input line 814.
@@ -1849,7 +1852,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig2.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig2-eps-converted-to.pdf imgs/Chap4/fig2.eps>
 (epstopdf)             \includegraphics on input line 817.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig2-eps-converted-to.pdf, id=940, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig2-eps-converted-to.pdf, id=933, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig2-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig2-eps-converted-to.pdf  used on input line 817.
@@ -1863,7 +1866,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig3.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig3-eps-converted-to.pdf imgs/Chap4/fig3.eps>
 (epstopdf)             \includegraphics on input line 825.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig3-eps-converted-to.pdf, id=941, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig3-eps-converted-to.pdf, id=934, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig3-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig3-eps-converted-to.pdf  used on input line 825.
@@ -1877,7 +1880,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig4.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig4-eps-converted-to.pdf imgs/Chap4/fig4.eps>
 (epstopdf)             \includegraphics on input line 828.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig4-eps-converted-to.pdf, id=942, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig4-eps-converted-to.pdf, id=935, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig4-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig4-eps-converted-to.pdf  used on input line 828.
@@ -1891,7 +1894,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig5.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig5-eps-converted-to.pdf imgs/Chap4/fig5.eps>
 (epstopdf)             \includegraphics on input line 854.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig5-eps-converted-to.pdf, id=943, 497.86pt x 255.95625pt>
+<imgs/Chap4/fig5-eps-converted-to.pdf, id=936, 497.86pt x 255.95625pt>
 File: imgs/Chap4/fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig5-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig5-eps-converted-to.pdf  used on input line 854.
@@ -1905,7 +1908,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig6.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig6-eps-converted-to.pdf imgs/Chap4/fig6.eps>
 (epstopdf)             \includegraphics on input line 857.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig6-eps-converted-to.pdf, id=944, 501.875pt x 265.99374pt>
+<imgs/Chap4/fig6-eps-converted-to.pdf, id=937, 501.875pt x 265.99374pt>
 File: imgs/Chap4/fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig6-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig6-eps-converted-to.pdf  used on input line 857.
@@ -1919,7 +1922,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig7.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig7-eps-converted-to.pdf imgs/Chap4/fig7.eps>
 (epstopdf)             \includegraphics on input line 865.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig7-eps-converted-to.pdf, id=945, 500.87125pt x 265.99374pt>
+<imgs/Chap4/fig7-eps-converted-to.pdf, id=938, 500.87125pt x 265.99374pt>
 File: imgs/Chap4/fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig7-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig7-eps-converted-to.pdf  used on input line 865.
@@ -1933,7 +1936,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig8.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig8-eps-converted-to.pdf imgs/Chap4/fig8.eps>
 (epstopdf)             \includegraphics on input line 868.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig8-eps-converted-to.pdf, id=946, 500.87125pt x 265.99374pt>
+<imgs/Chap4/fig8-eps-converted-to.pdf, id=939, 500.87125pt x 265.99374pt>
 File: imgs/Chap4/fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig8-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig8-eps-converted-to.pdf  used on input line 868.
@@ -1947,7 +1950,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig16.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig16-eps-converted-to.pdf imgs/Chap4/fig16.eps>
 (epstopdf)             \includegraphics on input line 876.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig16-eps-converted-to.pdf, id=947, 489.83pt x 392.46625pt>
+<imgs/Chap4/fig16-eps-converted-to.pdf, id=940, 489.83pt x 392.46625pt>
 File: imgs/Chap4/fig16-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig16-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig16-eps-converted-to.pdf  used on input line 876.
@@ -1961,7 +1964,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig9.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig9-eps-converted-to.pdf imgs/Chap4/fig9.eps>
 (epstopdf)             \includegraphics on input line 901.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig9-eps-converted-to.pdf, id=948, 490.83376pt x 265.99374pt>
+<imgs/Chap4/fig9-eps-converted-to.pdf, id=941, 490.83376pt x 265.99374pt>
 File: imgs/Chap4/fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig9-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig9-eps-converted-to.pdf  used on input line 901.
@@ -1975,7 +1978,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig10.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig10-eps-converted-to.pdf imgs/Chap4/fig10.eps>
 (epstopdf)             \includegraphics on input line 904.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig10-eps-converted-to.pdf, id=949, 490.83376pt x 265.99374pt>
+<imgs/Chap4/fig10-eps-converted-to.pdf, id=942, 490.83376pt x 265.99374pt>
 File: imgs/Chap4/fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig10-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig10-eps-converted-to.pdf  used on input line 904.
@@ -1989,7 +1992,7 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig12.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig12-eps-converted-to.pdf imgs/Chap4/fig12.eps>
 (epstopdf)             \includegraphics on input line 912.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig12-eps-converted-to.pdf, id=950, 502.87875pt x 258.9675pt>
+<imgs/Chap4/fig12-eps-converted-to.pdf, id=943, 502.87875pt x 258.9675pt>
 File: imgs/Chap4/fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig12-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig12-eps-converted-to.pdf  used on input line 912.
@@ -2003,51 +2006,53 @@ Package epstopdf Info: Source file: <imgs/Chap4/fig11.eps>
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig11-eps-converted-to.pdf imgs/Chap4/fig11.eps>
 (epstopdf)             \includegraphics on input line 915.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig11-eps-converted-to.pdf, id=951, 490.83376pt x 265.99374pt>
+<imgs/Chap4/fig11-eps-converted-to.pdf, id=944, 490.83376pt x 265.99374pt>
 File: imgs/Chap4/fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig11-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig11-eps-converted-to.pdf  used on input line 915.
 (pdftex.def)             Requested size: 352.8155pt x 191.20282pt.
 
 
-[52 <./imgs/Chap4/fig1-eps-converted-to.pdf> <./imgs/Chap4/fig2-eps-converted-to.pdf>]
+[51 <./imgs/Chap4/fig1-eps-converted-to.pdf> <./imgs/Chap4/fig2-eps-converted-to.pdf>]
 
-[53 <./imgs/Chap4/fig3-eps-converted-to.pdf> <./imgs/Chap4/fig4-eps-converted-to.pdf>]
+[52 <./imgs/Chap4/fig3-eps-converted-to.pdf> <./imgs/Chap4/fig4-eps-converted-to.pdf>]
 
-[54 <./imgs/Chap4/fig5-eps-converted-to.pdf> <./imgs/Chap4/fig6-eps-converted-to.pdf>]
+[53 <./imgs/Chap4/fig5-eps-converted-to.pdf> <./imgs/Chap4/fig6-eps-converted-to.pdf>]
 
-[55 <./imgs/Chap4/fig7-eps-converted-to.pdf> <./imgs/Chap4/fig8-eps-converted-to.pdf>]
+[54 <./imgs/Chap4/fig7-eps-converted-to.pdf> <./imgs/Chap4/fig8-eps-converted-to.pdf>]
 
-[56 <./imgs/Chap4/fig16-eps-converted-to.pdf>]
+[55 <./imgs/Chap4/fig16-eps-converted-to.pdf>]
 
-[57 <./imgs/Chap4/fig9-eps-converted-to.pdf> <./imgs/Chap4/fig10-eps-converted-to.pdf>]
+[56 <./imgs/Chap4/fig9-eps-converted-to.pdf> <./imgs/Chap4/fig10-eps-converted-to.pdf>]
 
-[58 <./imgs/Chap4/fig12-eps-converted-to.pdf> <./imgs/Chap4/fig11-eps-converted-to.pdf>]
+[57 <./imgs/Chap4/fig12-eps-converted-to.pdf> <./imgs/Chap4/fig11-eps-converted-to.pdf>]
 
-[59]) (./chapters/chap5.tex
+[58]) (./chapters/chap5.tex
 
-[60]
+[59]
 Chapter 5.
 
 
-[61
+[60
 
 ]) (./misc/summary.tex
 
-[62]
+[61]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15> not available
 (Font)              size <14.4> substituted on input line 2.
 
 ) (./Dissertation.bbl
 
+[62
+
+]
+
 [63
 
 ]
 
-[64
-
-]
+[64]
 
 [65]
 
@@ -2058,8 +2063,6 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15> not available
 [68]
 
 [69]
-
-[70]
 LaTeX Font Info:    Trying to load font information for LUC+uhcmj on input line 176.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
 File: lucuhcmj.fd 2013/09/26 UHC Myeongjo font definitions
@@ -2067,15 +2070,15 @@ File: lucuhcmj.fd 2013/09/26 UHC Myeongjo font definitions
 Missing character: There is no ® in font uwmj00!
 
 
-[71])
+[70])
 
-[72] (./misc/acknowledgements.tex)
+[71] (./misc/acknowledgements.tex)
 
-[73
+[72
 
 ]
 
-[74] (./Dissertation.aux)
+[73] (./Dissertation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -2087,18 +2090,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18117 strings out of 473330
- 307932 string characters out of 5719762
+ 18122 strings out of 473330
+ 308037 string characters out of 5719762
  721071 words of memory out of 5000000
- 40606 multiletter control sequences out of 15000+600000
+ 40611 multiletter control sequences out of 15000+600000
  590418 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,29n,79p,1592b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,29n,79p,1597b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Dissertation.pdf (85 pages, 5396685 bytes).
+Output written on Dissertation.pdf (84 pages, 5397199 bytes).
 PDF statistics:
- 1624 PDF objects out of 1728 (max. 8388607)
- 1350 compressed objects within 14 object streams
+ 1617 PDF objects out of 1728 (max. 8388607)
+ 1344 compressed objects within 14 object streams
  334 named destinations out of 1000 (max. 500000)
  564 words of extra memory for PDF output out of 10000 (max. 10000000)
 

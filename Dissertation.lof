@@ -19,30 +19,30 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Weight norm}}}{33}{subfigure.7.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lagrange multipliers}}}{33}{subfigure.7.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture of the Constrained Optimization-based Neuro-Adaptive Controller (CoNAC).}}{36}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Weight norm constraints.}}{40}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Input bound constraints.}}{41}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Input norm constraints.}}{42}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Convexity of input constraints.}}{43}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Two-link manipulator model.}}{48}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Effect of parameter $p$ in the control input saturation function $h$ and boundedness of $\Vert \partial h/\partial \tau \Vert _F$.}}{49}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of the tracking performance of BSC and DNN-BSC.}}{51}{figure.caption.38}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {BSC}}}{51}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {DNN-BSC}}}{51}{subfigure.8.2}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison of the tracking performance of DNN-BSC-A and CoNAC.}}{52}{figure.caption.39}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {DNN-BSC-A}}}{52}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CoNAC}}}{52}{subfigure.9.2}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison of the control input $\tau $ and the physically saturated control input $h(\tau )$ of BSC and DNN-BSC.}}{53}{figure.caption.40}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {BSC}}}{53}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {DNN-BSC}}}{53}{subfigure.10.2}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of the control input $\tau $ and the physically saturated control input $h(\tau )$ of DNN-BSC-A and CoNAC.}}{54}{figure.caption.41}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {DNN-BSC-A}}}{54}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CoNAC}}}{54}{subfigure.11.2}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Control input paths of DNN-BSC and CoNAC during the time interval from 5 s to 8 s.}}{55}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Weight norms of DNN-BSC and DNN-BSC-A.}}{56}{figure.caption.43}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Weight norms of DNN-BSC}}}{56}{subfigure.13.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Weight norms of DNN-BSC-A}}}{56}{subfigure.13.2}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Lagrange multipliers and weight norms CoNAC.}}{57}{figure.caption.44}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Multipliers of CoNAC}}}{57}{subfigure.14.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Weight norms of CoNAC}}}{57}{subfigure.14.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture of the constrained optimization-based neuro-adaptive controller (CoNAC).}}{37}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Weight norm constraints.}}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Input bound constraints.}}{42}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Input norm constraints.}}{43}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Convexity of input constraints.}}{44}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Two-link manipulator model.}}{49}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Effect of parameter $p$ in the control input saturation function $h$ and boundedness of $\Vert \partial h/\partial \tau \Vert _F$.}}{50}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of the tracking performance of BSC and DNN-BSC.}}{52}{figure.caption.38}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {BSC}}}{52}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {DNN-BSC}}}{52}{subfigure.8.2}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison of the tracking performance of DNN-BSC-A and CoNAC.}}{53}{figure.caption.39}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {DNN-BSC-A}}}{53}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CoNAC}}}{53}{subfigure.9.2}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison of the control input $\tau $ and the physically saturated control input $h(\tau )$ of BSC and DNN-BSC.}}{54}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {BSC}}}{54}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {DNN-BSC}}}{54}{subfigure.10.2}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of the control input $\tau $ and the physically saturated control input $h(\tau )$ of DNN-BSC-A and CoNAC.}}{55}{figure.caption.41}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {DNN-BSC-A}}}{55}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CoNAC}}}{55}{subfigure.11.2}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Control input paths of DNN-BSC and CoNAC during the time interval from 5 s to 8 s.}}{56}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Weight norms of DNN-BSC and DNN-BSC-A.}}{57}{figure.caption.43}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Weight norms of DNN-BSC}}}{57}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Weight norms of DNN-BSC-A}}}{57}{subfigure.13.2}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Lagrange multipliers and weight norms CoNAC.}}{58}{figure.caption.44}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Multipliers of CoNAC}}}{58}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Weight norms of CoNAC}}}{58}{subfigure.14.2}%
 \addvspace {10\p@ }

@@ -1,13 +1,13 @@
 
 \summary
 
-In this thesis, the Constrained Optimization-based Neuro-Adaptive Controller \allowbreak (CoNAC) for uncertain Euler-Lagrange systems is presented. 
-The neural network (NN) in the CoNAC is used to approximate the uncertainties of the system.
+In this thesis, a constrained optimization-based neuro-adaptive controller \allowbreak (CoNAC) for uncertain Euler-Lagrange systems is presented. 
+The deep neural network (NN) in the CoNAC is used to approximate the uncertainties of the system.
 Therefore, any prior knowledge of the system uncertainties is not required.
 To derive the adaptation laws of NN's weights and Lagrange multipliers, the control problem is formulated as a constrained optimization problem.
-Satisfactions of the boundedness of the weights and control input saturation are transformed into constraints in the constrained optimization problem.
-Using the problem, the adaptation laws are derived based on corresponding Lagrangian function.
-The stability of the CoNAC is analyzed using the Lyapunov stability theorem.
-Two simulation validations are conducted using a two-link manipulator model to validate the CoNAC.
-The simulations demonstrated that the CoNAC can achieve the sufficient tracking performance while satisfying the constraints on the weights and control input saturation.
+Satisfactions of the weights' boundedness and control input saturation are transformed into constraints in the constrained optimization problem.
+Using the corresponding Lagrangian function, the adaptation laws are derived.
+The adaptation laws satisfy the first-order optimality conditions at the steady state.
+The stability of the CoNAC is analyzed using the Lyapunov stability theorem with boundedness of weights and tracking errors guaranteed.
+Two simulation demonstrated that the CoNAC can achieve the sufficient tracking performance while satisfying the constraints on the weights and control input saturation..
 

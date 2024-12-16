@@ -38,26 +38,26 @@
 \contentsline {subsection}{\numberline {3.7.1}Setup}{27}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}Results}{29}{subsection.3.7.2}%
 \contentsline {section}{\numberline {3.8}Conclusion}{33}{section.3.8}%
-\contentsline {chapter}{\numberline {4} CoNAC for Uncertain Euler–Lagrange Systems Under Weight and Input Constraints }{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Problem formulation}{34}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Existing Works to Prevent Input Saturation}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}CoNAC with Weight and Input Constraints}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Control Law Development}{37}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Weight Adaptation Laws}{38}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {4} CoNAC for Uncertain Euler–Lagrange Systems Under Weight and Input Constraints }{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Problem formulation}{35}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Existing Works to Prevent Input Saturation}{36}{section.4.3}%
+\contentsline {section}{\numberline {4.4}CoNAC with Weight and Input Constraints}{37}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Control Law Development}{38}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Weight Adaptation Laws}{39}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Constraint Candidates}{40}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Weight Norm Constraint}{41}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Input Bound Constraint}{41}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}Input Bound Constraint}{42}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Input Norm Constraint}{42}{subsection.4.5.3}%
 \contentsline {section}{\numberline {4.6}Stability Analysis}{43}{section.4.6}%
-\contentsline {subsubsection}{ Step 1: Boundedness of $\hat \theta _k,\eta _k$, and $\xi $ }{44}{section*.32}%
-\contentsline {subsubsection}{Step i: Boundedness of $\hat \theta _i$ and $\eta _i, \ i\in [k-1,\cdots ,0]$}{46}{section*.33}%
-\contentsline {section}{\numberline {4.7}Simulation Validation}{47}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Setup}{47}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Results}{52}{subsection.4.7.2}%
-\contentsline {subsubsection}{System Uncertainty Handling}{52}{section*.45}%
-\contentsline {subsubsection}{Input Norm Constraint Handling}{54}{section*.46}%
-\contentsline {subsubsection}{Weight Norm Constraint Handling}{56}{section*.47}%
+\contentsline {subsubsection}{ Step 1: Boundedness of $\hat \theta _k,\eta _k$, and $\xi $ }{45}{section*.32}%
+\contentsline {subsubsection}{Step i: Boundedness of $\hat \theta _i$ and $\eta _i, \ i\in [k-1,\cdots ,0]$}{47}{section*.33}%
+\contentsline {section}{\numberline {4.7}Simulation Validation}{48}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Setup}{48}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Results}{51}{subsection.4.7.2}%
+\contentsline {subsubsection}{System Uncertainty Handling}{51}{section*.45}%
+\contentsline {subsubsection}{Input Norm Constraint Handling}{52}{section*.46}%
+\contentsline {subsubsection}{Weight Norm Constraint Handling}{55}{section*.47}%
 \contentsline {section}{\numberline {4.8}Conclusion}{58}{section.4.8}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{60}{chapter.5}%
 \contentsline {chapter}{Summary}{62}{chapter*.48}%

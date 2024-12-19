@@ -58,8 +58,9 @@
 \contentsline {subsubsection}{System Uncertainty Handling}{51}{section*.45}%
 \contentsline {subsubsection}{Input Norm Constraint Handling}{52}{section*.46}%
 \contentsline {subsubsection}{Weight Norm Constraint Handling}{55}{section*.47}%
-\contentsline {section}{\numberline {4.8}Conclusion}{58}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{60}{chapter.5}%
-\contentsline {chapter}{Summary}{62}{chapter*.48}%
-\contentsline {chapter}{References}{63}{chapter*.49}%
-\contentsline {chapter}{\fontsize {12}{1pt}\selectfont Acknowledgements }{72}{chapter*.50}%
+\contentsline {subsubsection}{Comparison Analysis of Computation Times}{58}{section*.48}%
+\contentsline {section}{\numberline {4.8}Conclusion}{59}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{61}{chapter.5}%
+\contentsline {chapter}{Summary}{63}{chapter*.50}%
+\contentsline {chapter}{References}{64}{chapter*.51}%
+\contentsline {chapter}{\fontsize {12}{1pt}\selectfont Acknowledgements }{73}{chapter*.52}%

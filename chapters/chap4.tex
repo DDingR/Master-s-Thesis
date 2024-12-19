@@ -976,6 +976,39 @@ In CoNAC, all weight norms complied with the imposed constraints through the con
 
 The overall weight norms of CoNAC were larger than those of DNN-BSC and DNN-BSC-A, since CoNAC approximated the entire stabilizing control law, whereas DNN-BSC and DNN-BSC-A only approximated the system uncertainty term within the BSC framework.
 
+\subsubsection{Comparison Analysis of Computation Times}
+
+\begin{table}[!t]
+    \renewcommand{\arraystretch}{1.3}
+    \caption{Average computation times.}
+    \centering
+    \begin{tabular}{|c||c|c|c|c|c|}
+    \hline
+    Computation time & \textbf{BSC} & \textbf{DNN-BSC} & \textbf{DNN-BSC-A} & \textbf{CoNAC} \\
+    \hline 
+    Control ($10^{-5}$~s) & 0.087 & 0.755 & 0.7477 & 0.7465 \\
+    \hline
+    Ratio & 0.112 & 1 & 0.988 & 0.987 \\
+    \hline
+    Train ($\times 10^{-5}$~s) & - & 3.877 & 3.821 & 3.826 \\
+    \hline
+    Ratio & - & 1 & 0.986 & 0.987 \\ 
+    \hline
+    \end{tabular}
+    \label{chap4:table:comp_time}
+\end{table}
+
+In addition, the computation times were analyzed and summarized in Table \ref{chap4:table:comp_time}.
+The MATLAB's functions \texttt{tic} and \texttt{toc} were used to measure the computation time at each time step and the average values were calculated.
+The simulations were conducted on a MacBook Air (2021 model) with an M1 processor and 8GB of RAM.
+The computation times of DNN-BSC were used as the reference for the comparison.
+
+The computing times of the control decisions and training processes of all controllers were below the simulation sampling time $T_s=10^{-4}$ indicating their suitability for real-time applications, as shown in Table \ref{chap4:table:comp_time}.
+Notably, controllers utilizing DNNs exhibited higher computation times than BSC due to the additional processing required for the DNNs.
+However, compared to the DNN-BSC and DNN-BSC-A, the CoNAC had similar computation times for both the control and training processes.
+In other words, even though the CoNAC involves the additional process for the constraints and the Lagrange multipliers, its computation times were not significantly increased compared to the DNN-BSC and DNN-BSC-A.
+Therefore, the CoNAC can achieve the better tracking performance and the constraint handling capability which were discussed in aforementioned sections, without notable increase in the computation times compared to existing methods with DNNs.  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -17,20 +17,10 @@ In this thesis, the Euler-Lagrange systems will be used as target system since m
 Using system matrices $M(q)\in\R^{n\times n}$, $C(q,\dot{q})\in\R^{n\times n}$, and $G(q)\in\R^{n}$, and external forces $F(q)\in\R^n$, the Euler-Lagrange system can be rewritten as
 \begin{equation}
     M(q)\ddot{q} + C(q,\dot{q})\dot{q} + G(q) +F(q)= \tau
-    .
     \label{chap2:eq:EL}
 \end{equation}
+where $q\in\R^n$ denotes generalized state variables and $\tau\in\R^n$ denotes generalized control input.
 The Euler-Lagrange system can be transformed into a second-order control-affine system by defining the state variables $x_1\triangleq q$ and $x_2\triangleq \dot q$ as
-\begin{equation}
-    \begin{aligned}
-        \dot{x}_1 &= x_2,\\
-        \dot{x}_2 &= M^{-1}(q)(\tau - C(q,x_2)x_2 - G(q) - F(q))
-        .
-    \end{aligned}
-\end{equation}
-
-Using backstepping control approach, the system can be broken down into lower dimension subsystem by generating the auxiliary control input to regulate the higher dimension original system \cite{RN7}.
-For simplicity, rewrite the system \eqref{chap2:eq:EL} as follows:
 \begin{equation}
   \begin{aligned}
     \dot x_1 =& x_2\\
@@ -38,7 +28,9 @@ For simplicity, rewrite the system \eqref{chap2:eq:EL} as follows:
   \end{aligned}
 \end{equation}
 where $x\triangleq [x_1,x_2]^T\in\R^{2n}$, $u\triangleq \tau$, $f(x,t)\triangleq M^{-1}(-Cx_2-G-F)$ and $g(x,t)\triangleq M^{-1}$ are system functions.
-Then considering tracking error with a given smooth reference signal $r_1(t)\in\R^n$, the tracking error and its time-derivative are defined as
+
+Using backstepping control approach, the system can be broken down into lower dimension subsystem by generating the auxiliary control input to regulate the higher dimension original system \cite{RN7}.
+Considering tracking error with a given smooth reference signal $r_1(t)\in\R^n$, the tracking error and its time-derivative are defined as
 \begin{equation}
   e_1\triangleq x_1-r_1,\quad \dot e_1= \dot x_1-\dot r_1=x_2-\dot r_1
   .
@@ -47,15 +39,15 @@ Using the Lyapunov function defined as $\mathcal V_1\triangleq (1/2)e_1^Te_1$, t
 \begin{equation}
   \dot {\mathcal V}_1 =e_1^T\dot e_1=e_1^T(x_2-\dot r_1)
 \end{equation}
-The auxiliary control input $r_2\in\R^n$ which realizes $\dot{\mathcal V}_1<0$ can be defined as $r_2\triangleq \dot r_1 -k_1e_1$ for some constant $k_1\in\R_{>0}$.
-Let $e_2\triangleq x_2-r_2=x_2-(-k_1e_1+\dot r_1)$ denote the tracking error of $x_2$.
+The auxiliary control input $r_2\in\R^n$ which realizes $\dot{\mathcal V}_1<0$ can be defined as $r_2\triangleq  -k_1e_1+\dot r_1$ for some constant $k_1\in\R_{>0}$.
+Let $e_2\triangleq x_2-r_2=x_2-(-k_1e_1+\dot r_1)$ denotes the tracking error of $x_2$.
 
 Then, the time-derivative of the Lyapunov function $\mathcal V_2\triangleq (1/2)e_1^Te_1+(1/2)e_2^Te_2$ yields
 \begin{equation}
   \begin{aligned}
     \dot {\mathcal V}_2
     =&
-    e_1^T(x_2-\dot r_1)+e_2^Te_2\\
+    e_1^T(x_2-\dot r_1)+e_2^T\dot e_2\\
     =&
     e_1^T(-k_1e_1+e_2)+e_2^T\dot e_2\\
     =&
@@ -66,12 +58,10 @@ Then, the time-derivative of the Lyapunov function $\mathcal V_2\triangleq (1/2)
 
 Therefore, the stabilizing control input $u$ that realizes $\dot {\mathcal V}_2=-k_1e_1^Te_1-k_2e_2^Te_2<0$ can be designed as
 \begin{equation}
-  u\triangleq {1\over g} (-e_1 -k_2e_2 +\dot r_2 -f)
+  u\triangleq g^{-1} (-e_1 -k_2e_2 +\dot r_2 -f)
 \end{equation}
 where $k_2\in\R_{>0}$ is a positive constant.
 Note that, the stabilizing control input $u$ requires the knowledge of the system functions $f(x)$ and $g(x)$.
- 
-% \subsection{BIBO Stability}
 
 On the other hand, the bounded input bounded output (BIBO) stability defined in Theorem \ref{chap2:thm:BIBO}, will be used for the stability analysis in the later chapters.
 
@@ -81,7 +71,7 @@ On the other hand, the bounded input bounded output (BIBO) stability defined in 
   \label{chap2:thm:BIBO}
 \end{theorem}
 
-In other word, for a linear system $\dot x=Ax+Bu$ where $A$ is Hurwitz matrix and $\Vert B\Vert_F$ and $\Vert u\Vert$ are bounded, $\Vert x\Vert$ is bounded.
+In other word, $\Vert x\Vert$ is bounded, for a linear system $\dot x=Ax+Bu$ where $A$ is Hurwitz matrix and $\Vert B\Vert_F$ and $\Vert u\Vert$ are bounded.
 Without loss of generality, the BIBO stability can be extended to matrix state $x\in\R^{n\times m}$ as well.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,6 +98,8 @@ For a matrix $A\in\mathbb R^{n\times m}$, the \textbf{vec} operator is defined a
   .
 \end{equation}
 
+Moreover, for the brief expression of neural networks (NNs) and their gradient, \textbf{Kronecker product} will be used which is defined in Definition \ref{chap2:prop:kron}.
+
 \begin{definition}[see {\cite[Definition 7.1.2]{RN22}}]
   Using the \textbf{vec} operator, the \textbf{Kronecker product} of two matrices $A\in\mathbb R^{n\times m}$ and $B\in\mathbb R^{p\times q}$ is defined as
   \begin{equation}
@@ -123,7 +115,8 @@ For a matrix $A\in\mathbb R^{n\times m}$, the \textbf{vec} operator is defined a
   \end{equation}
 \end{definition}
 
-We will use following proposition in the later chapters.
+The \textbf{Kronecker product} has the following proposition.
+
 \begin{proposition}[see {\cite[Proposition 7.1.9]{RN22}}]
   For matrix $A\in\mathbb R^{n\times m}$ and vector $x\in\mathbb R^n$, we have the following property
   \begin{equation}
@@ -174,7 +167,7 @@ Then, the constrained optimization problem can be reformulated as the min-max pr
 \end{equation}
 
 The conditions of optimality are defined by the first-order necessary condition and the second-order necessary and sufficient conditions.
-The first-order necessary condition often known as the \textit{Karush-Kuhn-Tucker conditions} (KKT) is the gradient of the Lagrangian function $L$ at $(x^*,\lambda^*)$ should be zero.
+The first-order necessary condition which is often known as the \textit{Karush-Kuhn-Tucker conditions} (KKT) is that the gradient of the Lagrangian function $L$ at $(x^*,\lambda^*)$ should be zero.
 The second-order necessary condition is that the Hessian matrix of $L$ at $(x^*,\lambda^*)$ should be positive semi-definite while the second-order sufficient condition is that the Hessian matrix should be positive definite (\ie $L$ is convex in the neighbor of the point $(x^*,\lambda^*)$).
 The constrained optimization problem typically attempts to find local solution ($x^*,\lambda^*$) which satisfy the first-order necessary condition of optimality, since there is no guarantee that $L$ is convex function (\ie for the global optimality second-order condition is required).
 The KKT conditions for the constrained optimization problem is stated in \cite{RN9} as following Theorem \ref{chap2:thm:KKT}.
@@ -247,7 +240,7 @@ In other word, the angle between the gradient at $x$ and the vector $x$ is posit
 In \cite[Chapter 2.3.2]{RN1}, the authors stated that the affine functions preserve the convexity of the function as follows:
 \begin{displayquote}
   
-  Recall that a function $f:\R^n\to\R^m$ is affine if it is a sum of a linear function and a constant, \ie if it has the form $f(x) = Ax + b$, where $A\in\R^{m\otimes n}$ and $b\in\R^m$. Suppose $S\in\R^n$ is convex and $f:R\in n\to\R^m$ is an affine function. Then the image of $S$ under $f$,
+  Recall that a function $f:\R^n\to\R^m$ is affine if it is a sum of a linear function and a constant, \ie if it has the form $f(x) = Ax + b$, where $A\in\R^{m\times n}$ and $b\in\R^m$. Suppose $S\in\R^n$ is convex and $f:R\in n\to\R^m$ is an affine function. Then the image of $S$ under $f$,
   \begin{equation}
     f(S) = \{ f(x) | x\in S \}
     ,
@@ -263,7 +256,7 @@ This property will be utilized in the stability analysis of the controller in Ch
 
 % \subsection{Universal Approximation Property} 
 
-The capability of the neural networks (NNs) to approximate functions is based on the approximation theory \cite{RN4}. 
+The capability of NNs to approximate functions is based on the approximation theory \cite{RN4}. 
 In other words, the NNs can approximate any sufficiently smooth function on a compact set with arbitrary accuracy according to the universal approximation theorem defined in Theorem \ref{chap2:thm:uni_approx}.
 
 \begin{theorem}[see {\cite{RN48, RN43}}]

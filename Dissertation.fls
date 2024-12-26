@@ -632,6 +632,10 @@ INPUT ./imgs/Chap4/fig11.eps
 INPUT ./imgs/Chap4/fig11-eps-converted-to.pdf
 INPUT ./imgs/Chap4/fig11-eps-converted-to.pdf
 INPUT ./imgs/Chap4/fig11-eps-converted-to.pdf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/uhc/uwmj/uwmj22.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./chapters/chap5.tex
 INPUT ./chapters/chap5.tex
@@ -642,9 +646,6 @@ INPUT misc/summary.tex
 INPUT ./Dissertation.bbl
 INPUT ./Dissertation.bbl
 INPUT Dissertation.bbl
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/uhc/uwmj/uwmj00.tfm
 INPUT ./misc/acknowledgements.tex
 INPUT ./misc/acknowledgements.tex

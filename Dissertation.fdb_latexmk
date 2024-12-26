@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Dissertation"] 1734611507.20555 "Dissertation.aux" "Dissertation.bbl" "Dissertation" 1734611714.87905 0
+["bibtex Dissertation"] 1735172761.69683 "Dissertation.aux" "Dissertation.bbl" "Dissertation" 1735173843.16193 0
   "./biblist.bib" 1732803289 28344 b6456034abb371bb5969327e0e5e4ef3 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Dissertation.aux" 1734611714.16954 69323 9a6a2e09d03724b2522ab659323756f6 "pdflatex"
+  "Dissertation.aux" 1735173842.56255 69212 3ccb23406660684eeb9191522dd2cb10 "pdflatex"
   (generated)
   "Dissertation.bbl"
   "Dissertation.blg"
   (rewritten before read)
-["pdflatex"] 1734611707.70623 "/Users/dding/Git Projects/Master's Thesis/Dissertation.tex" "Dissertation.pdf" "Dissertation" 1734611714.87939 0
+["pdflatex"] 1735173836.4955 "/Users/dding/Git Projects/Master's Thesis/Dissertation.tex" "Dissertation.pdf" "Dissertation" 1735173843.16218 0
   "/Users/dding/Git Projects/Master's Thesis/Dissertation.tex" 1734276451.32385 10641 bd7fe55c57c099891f1fd12700030b59 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -74,6 +74,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd5.tfm" 1364599308 1248 528122c0ec5b8fe37c5f9a68d4591379 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd6.tfm" 1364599308 1256 7f40e67a93382186df75e8e2b7098d53 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/uhc/uwmj/uwmj00.tfm" 1136768653 676 31f19d04fc7f3e48c0ab552ba7682077 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/uhc/uwmj/uwmj22.tfm" 1136768653 896 56fdafe6163979220cfce3403887cfc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1248133631 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -220,16 +221,16 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1734509147 5485709 8129e419010b46b234085a26866cdb87 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1734299525 3343724 808fea68510c8268572558cd975f36f6 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Dissertation.aux" 1734611714.16954 69323 9a6a2e09d03724b2522ab659323756f6 "pdflatex"
-  "Dissertation.bbl" 1734611507.31194 12503 851b2fd03fabecb1abb1a0420ce91ca2 "bibtex Dissertation"
-  "Dissertation.lof" 1734611714.17783 5148 f699a505c66e37af46311ed92799b2d0 "pdflatex"
+  "Dissertation.aux" 1735173842.56255 69212 3ccb23406660684eeb9191522dd2cb10 "pdflatex"
+  "Dissertation.bbl" 1735172761.79798 12503 b39609b616b7bc417367075a50f0ba82 "bibtex Dissertation"
+  "Dissertation.lof" 1735173842.57056 5148 f699a505c66e37af46311ed92799b2d0 "pdflatex"
   "Dissertation.tex" 1734276451.32385 10641 bd7fe55c57c099891f1fd12700030b59 ""
-  "Dissertation.toc" 1734611714.17777 5710 3fb5013ffbff3f20fba205c058f231da "pdflatex"
-  "chapters/chap1.tex" 1734272891.8544 13273 2afef9daec36cd7e39ecc8e5c5fb3b35 ""
-  "chapters/chap2.tex" 1734346871.30436 20127 1f6eb2e5f86c66d30ff769eb2ae0f9ce ""
-  "chapters/chap3.tex" 1734349064.79584 41404 6352fff819fca6a2a7531375f080f055 ""
-  "chapters/chap4.tex" 1734611707.4059 62251 cbda1bc1c351f3e78b113cb69cc7357d ""
-  "chapters/chap5.tex" 1734349475.63895 2666 fbb672cca9ebdfaa898067bfdcf52c53 ""
+  "Dissertation.toc" 1735173842.5705 5710 2594955f5845cc4ff797be4542b973b2 "pdflatex"
+  "chapters/chap1.tex" 1735041730.43636 13881 e9fdb873bbdda3aec46191031a3a120e ""
+  "chapters/chap2.tex" 1735162711.39905 20125 e058f14faacdd15faeaf356dfe983627 ""
+  "chapters/chap3.tex" 1735170266.88459 41409 f707fc55daf66a7a96f377e0e4e5c350 ""
+  "chapters/chap4.tex" 1735171699.25856 62254 ccaef70492b4d73a7215138dd9f6785f ""
+  "chapters/chap5.tex" 1735173626.75822 3693 f6b15975f97c7264fcf6a655a359b89d ""
   "gist.cls" 1734220848.04215 27499 013d4fb1726ed5cc991baa9b3314e8d8 ""
   "imgs/BoxWhisker.drawio.png" 1728998021 1996317 bbe58471f2c2ecd2b75e266ba2dfe370 ""
   "imgs/Chap3/fig10.eps" 1729110290 127587 41b013d827297ba4f450078ce70a18bd ""
@@ -265,7 +266,7 @@
   "misc/acknowledgements.tex" 1731678612 282 7ce7a738b7f8f8292e7dc58cff34204d ""
   "misc/eabstract.tex" 1734349984.06192 943 df6b8961cc68f2e14e0fefebf73e7017 ""
   "misc/kabstract.tex" 1732800166 1095 b3899c14e94859f1d3541b1fdb0177e6 ""
-  "misc/summary.tex" 1734349666.61438 1094 f0b8c828615bade024c83515f757e02d ""
+  "misc/summary.tex" 1735173836.27531 1082 2e1749723a9a0f97a411f366ca0aa575 ""
   (generated)
   "Dissertation.aux"
   "Dissertation.lof"

@@ -4,7 +4,7 @@
 
 \chapter{Conclusion and Future Work} \label{chapter5}
 
-In this thesis, the Constrained Optimization-based Neuro-Adaptive Controller (Co\allowbreak NAC) for uncertain Euler-Lagrange systems is presented. 
+In this thesis, the constrained optimization-based neuro-adaptive controller (CoNAC) for uncertain Euler-Lagrange systems is presented. 
 The two simulation validations showed that the CoNAC can satisfy the imposed constraints regarding boundedness of neural network's (NN's) weights and control input saturation, while achieving the desired tracking performance.
 
 However, neuro-adaptive control (NAC) methods including CoNAC have several limitations to be referred as deep learning-based controller.
@@ -13,16 +13,23 @@ This means online implementation is required to train the NNs since the tracking
 Moreover, for the same reason, the NNs cannot be trained offline.
 Second, the gradient vanishing problem still exists in the train process of the NNs.
 To overcome this issue, simply ReLU activation function can be used.
-However, the stability should be examined rigorously, since this activation function is unbounded.
+However, the stability should be examined more rigorously than $\tanh(\cdot)$, since ReLU is unbounded and not continuously differentiable.
 
 The following future works are suggested to tackle above limitations.
-First, reinforcement learning (RL) approach can be used, since training NNs to minimize objective function is similar as RL which trains to maximize the expected reward with respect to tracking error.
+For the first limitation, first, reinforcement learning (RL) approach can be used, since training NNs to minimize objective function is similar as RL which trains to maximize the expected reward typically defined as sign changed tracking error.
 There are some literature based on optimal control theory \cite{RN119,RN120,RN121}.
-They approximate optimal control law which is ideally obtained using Hamilton-Jacobi-Bellman framework.
-Second, if the offline adaptation is available, stochastic problem formulation can be used to theoretically utilize novel deep learning methods.
-Since the recent deep learning methods are based on stochastic methods (\eg, stochastic gradient descent (SGD), drop out, $L_2$-regularization), stochastic stability analysis should be conducted.
-The stability analysis of system which uses stochastic neural network is introduced in \cite{RN122,RN123}.
-Third, other novel constrained optimization methods can be used to solve gradient vanishing issue.
+They approximate optimal control law which is ideally obtained using Hamilton-Jacobi-Bellman framework or concept of value function.
+Second, since the ideal desired control law is unavailable, the NAC problem can be reformulated as a system identification problem by re-design NAC to approximate system dynamics instead of control law.
+In contrast to the control law approximation, the NNs can be trained offline using the system identification data, if the accurate system dynamics or observation is available.
+
+For the second limitation, other novel constrained optimization methods can be used to solve gradient vanishing issue.
 Except gradient descent-like methods, the existing methods to overcome gradient vanishing issue using constrained optimization approach such as the augmented Lagrangian method (ALM) \cite{RN62} and the alternating direction method of multipliers (ADMM) \cite{RN98, RN94} are introduced.
 These methods transform the NN's architecture of the NNs to equality constraints and optimize each layer's weights and output of activation functions.
+In other words, the output of NNs can be considered as one of the optimization variables in optimization problem.
+Hence, it may simplify the stability analysis of CoNAC with complex constraints since the nonlinearity of NNs can be omitted in the adaptation derivation.
+
+On the other hand, if the offline adaptation is available, stochastic approach can be used to theoretically utilize novel deep learning methods.
+Since the recent deep learning methods are based on stochastic methods (\eg, stochastic gradient descent (SGD), drop out, $L_2$-regularization), stochastic stability analysis should be conducted if such methods are used in system.
+The stability analysis of system which uses stochastic methods is introduced in \cite{RN122,RN123}.
+By conducting stability analysis for stochastic systems with NNs and stochastic methods, the stability of the controllers with novel NN methods (\eg convolutional NN, transformer) can be theoretically and rigorously analyzed. 
 

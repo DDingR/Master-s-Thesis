@@ -10,8 +10,8 @@
 \section{Introduction} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this chapter, a novel constrained optimization based neuro-adaptive control (CoNAC) is presented for uncertain Euler-Lagrange systems with a weight norm constraint. 
-As presented in Chapter \ref{chap1:sec:example}, one of the common issues in neuro-adaptive control (NAC) is that the boundedness of neural network’s (NN) weights is not guaranteed.
+In this chapter, a novel constrained optimization-based neuro-adaptive control (CoNAC) is presented for uncertain Euler-Lagrange systems with a weight norm constraint. 
+As presented in Section \ref{chap1:sec:example}, one of the common issues in neuro-adaptive control (NAC) is that the boundedness of neural network’s (NN) weights is not guaranteed.
 Since the amplitude of control input of NAC is dependent on the weights, the unbounded weights may lead to instability and severe safety issues. 
 The satisfaction of the boundedness of the weights are reformulated into weight norm constraints, which are then incorporated into the CoNAC.
 
@@ -72,7 +72,7 @@ The projection operator is defined in \cite[Appendix E, eq.~(E.4)]{RN7} and repr
 \end{equation}
 where $\Gamma=\Gamma^T>0$ is adaptation gain matrix and $y\in\R^n$ denotes the update direction of optimization variable $x\in\R^n$.
 Moreover, $\Omega\triangleq \{x\ \vert\ c(x)\le 0\}$ denotes a convex set defined by $c(\cdot)$ is a convex function and $\delta\Omega$ denotes a boundary of $\Omega$.
-The convex function $c(\cdot)$ is typically selected as $x^Tx\le \bar x^2$ where $\bar x\in\R_{>0}$ is a maximum norm of $x$.
+The convex function $c(\cdot)$ is typically selected as $(1/2)x^Tx\le \bar x^2$ where $\bar x\in\R_{>0}$ is a maximum norm of $x$.
 However, in the literature, the projection operator is only applied to theoretically guarantee the boundedness of the weights, by selecting the convex set as large as possible.
 This is because, the authors attempts to estimate the globally ideal weights whose magnitude is unknown.
 
@@ -761,7 +761,7 @@ Therefore, if the physical analysis of the system is available to predict the fe
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this chapter, a Constrained Optimization-based Neuro-Adaptive Controller \allowbreak (CoNAC) with a single hidden layer neural network (SHLNN) and weight norm constraint is presented for the uncertain Euler-Lagrange systems.
+In this chapter, a constrained optimization-based neuro-adaptive controller (Co\allowbreak NAC) with a single hidden layer neural network (SHLNN) and weight norm constraint is presented for the uncertain Euler-Lagrange systems.
 The boundedness of the weights is handled by formulating a constrained optimization problem with weight norm inequality constraints.
 Using the constrained optimization approach, the adaptation laws of the weights and Lagrange multipliers are derived.
 The boundedness of the tracking error and the weight estimation are analyzed via Lyapunov analysis.

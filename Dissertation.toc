@@ -12,8 +12,8 @@
 \contentsline {section}{\numberline {1.4}Outline of the Thesis}{6}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Preliminaries}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Related Control Theory}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Mathematical Review}{9}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Matrix Algebra}{9}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.2}Mathematical Review}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Matrix Algebra}{8}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Constrained Optimization Theory}{10}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Preservation of Convexity}{11}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Deep Neural Networks}{12}{section.2.3}%

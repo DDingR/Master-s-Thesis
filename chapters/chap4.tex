@@ -478,7 +478,7 @@ Since $\tau = -\hat\Phi$, using Proposition \ref{chap2:prop:kron}, a linear map 
     \end{aligned}
     \label{chap4:eq:linear map}
 \end{equation}
-Therefore, since the linear map is affine map, the convexity of the input constraints in $\tau$-space (assumed in Assumption \ref{chap4:assum:assum1}) holds in $\hat\theta_k$-space as well as discussed in Section \ref{chap2:sec:convex_preserve}, implying that $(\partial c_j/\partial \hat\theta_k)^T\hat\theta_k>0$.
+Therefore, since the linear map is affine map, the convexity of the input constraints in $\tau$-space (assumed in Assumption \ref{chap4:assum:assum1}) holds in $\hat\theta_k$-space as well as discussed in Section \ref{chap2:sec:convex_preserve}, implying that $(\partial c_j/\partial \hat\theta_k)^T\hat\theta_k>0$ (see Lemma \ref{chap2:lem:conv_ang}).
 The preservation of convexity is illustrated in Fig.~\ref{chap4:fig:spaces}.
 
 \end{proof}
@@ -1000,7 +1000,7 @@ The overall weight norms of CoNAC were larger than those of DNN-BSC and DNN-BSC-
 
 In addition, the computation times were analyzed and summarized in Table \ref{chap4:table:comp_time}.
 The MATLAB's functions \texttt{tic} and \texttt{toc} were used to measure the computation time at each time step and the average values were calculated.
-The simulations were conducted on a MacBook Air (2021 model) with an M1 processor and 8GB of RAM.
+The simulations were conducted on a MacBook Air (2021 model) with an M1 processor and 8 GB of RAM.
 The computation times of DNN-BSC were used as the reference for the comparison.
 
 The computing times of the control decisions and training processes of all controllers were below the simulation sampling time $T_s=10^{-4}$ indicating their suitability for real-time applications, as shown in Table \ref{chap4:table:comp_time}.

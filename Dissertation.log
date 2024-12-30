@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.15)  26 DEC 2024 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.26)  31 DEC 2024 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"/Users/dding/Git Projects/Master's Thesis/Dissertation.tex"
 (/Users/dding/Git Projects/Master's Thesis/Dissertation.tex
 LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-11-02>
+L3 programming layer <2024-12-09>
 (./gist.cls
 Document Class: gist 2019/04/10 Document class for GIST thesis
 (/usr/local/texlive/2024/texmf-dist/tex/latex/cjk-ko/kotex.sty
@@ -756,333 +756,333 @@ Chapter 2.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.41 \end{equation}
+l.40 \end{equation}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.41 \end{equation}
+l.40 \end{equation}
                    ]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \begin{equation}
+l.45 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \begin{equation}
+l.45 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \begin{equation}
+l.45 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \begin{equation}
+l.45 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \begin{equation}
+l.59 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \begin{equation}
+l.59 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \begin{equation}
+l.59 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \begin{equation}
+l.59 \begin{equation}
                      
 
 [8
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.87   \item $
+l.86   \item $
               \text{row}_j(A)$ denotes the $j$-th row of matrix $A\in\R^{n\t...]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \begin{equation}
+l.91 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \begin{equation}
+l.91 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \begin{equation}
+l.91 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \begin{equation}
+l.91 \begin{equation}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105   \begin{equation}
+l.104   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105   \begin{equation}
+l.104   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105   \begin{equation}
+l.104   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105   \begin{equation}
+l.104   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122   \begin{equation}
+l.121   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122   \begin{equation}
+l.121   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122   \begin{equation}
+l.121   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122   \begin{equation}
+l.121   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.129 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.129 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.129 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.129 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.139 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.139 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.139 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.139 \begin{equation}
                       
 
 [9]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \begin{equation}
+l.158 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \begin{equation}
+l.158 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \begin{equation}
+l.158 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \begin{equation}
+l.158 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.163 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.163 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.163 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.163 \begin{equation}
                       
 
 [10]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179   \begin{equation}
+l.178   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179   \begin{equation}
+l.178   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179   \begin{equation}
+l.178   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179   \begin{equation}
+l.178   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198   \begin{equation}
+l.197   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198   \begin{equation}
+l.197   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198   \begin{equation}
+l.197   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198   \begin{equation}
+l.197   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206   \begin{equation}
+l.205   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206   \begin{equation}
+l.205   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206   \begin{equation}
+l.205   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206   \begin{equation}
+l.205   \begin{equation}
                         
 
 [11]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225   \begin{equation}
+l.224   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225   \begin{equation}
+l.224   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225   \begin{equation}
+l.224   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225   \begin{equation}
+l.224   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.244   \begin{equation}
+l.243   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.244   \begin{equation}
+l.243   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.244   \begin{equation}
+l.243   \begin{equation}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.244   \begin{equation}
+l.243   \begin{equation}
                         
 
 [12]
 <imgs/NN.drawio.png, id=431, 3222.0375pt x 1314.9125pt>
 File: imgs/NN.drawio.png Graphic file (type png)
 <use imgs/NN.drawio.png>
-Package pdftex.def Info: imgs/NN.drawio.png  used on input line 283.
+Package pdftex.def Info: imgs/NN.drawio.png  used on input line 282.
 (pdftex.def)             Requested size: 374.86774pt x 152.96735pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.291 \begin{equation}
+l.290 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.291 \begin{equation}
+l.290 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.291 \begin{equation}
+l.290 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.291 \begin{equation}
+l.290 \begin{equation}
                       
 
 [13 <./imgs/NN.drawio.png>]
@@ -1091,36 +1091,31 @@ l.291 \begin{equation}
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.351 \subsubsection
+l.350 \subsubsection
                     {Gradient of Deep Neural Network} \label{chap2:sec:DNNgrad}]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.355 \begin{equation}
+l.354 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.355 \begin{equation}
+l.354 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.355 \begin{equation}
+l.354 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.355 \begin{equation}
+l.354 \begin{equation}
                       ) (./chapters/chap3.tex
 
 [15]
 Chapter 3.
-
-Overfull \hbox (21.0011pt too wide) in paragraph at lines 13--17
-[]\OT1/cmr/m/n/12 In this chap-ter, a novel con-strained optimization-based neuro-adaptive con-trol (CoNAC)
- []
-
 
 
 [16
@@ -1394,10 +1389,10 @@ File: imgs/BoxWhisker.drawio.png Graphic file (type png)
 Package pdftex.def Info: imgs/BoxWhisker.drawio.png  used on input line 660.
 (pdftex.def)             Requested size: 374.86774pt x 188.85144pt.
 Package epstopdf Info: Source file: <imgs/Chap3/fig9.eps>
-(epstopdf)                    date: 2024-10-16 21:24:50
+(epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 129009 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig9-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:42
+(epstopdf)                    date: 2024-10-17 07:25:42
 (epstopdf)                    size: 44931 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig9-eps-converted-to.pdf imgs/Chap3/fig9.eps>
 (epstopdf)             \includegraphics on input line 697.
@@ -1408,10 +1403,10 @@ File: imgs/Chap3/fig9-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/Chap3/fig9-eps-converted-to.pdf  used on input line 697.
 (pdftex.def)             Requested size: 374.86774pt x 143.60147pt.
 Package epstopdf Info: Source file: <imgs/Chap3/fig10.eps>
-(epstopdf)                    date: 2024-10-16 21:24:50
+(epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 127587 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig10-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:43
+(epstopdf)                    date: 2024-10-17 07:25:43
 (epstopdf)                    size: 43040 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig10-eps-converted-to.pdf imgs/Chap3/fig10.eps>
 (epstopdf)             \includegraphics on input line 700.
@@ -1422,10 +1417,10 @@ File: imgs/Chap3/fig10-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/Chap3/fig10-eps-converted-to.pdf  used on input line 700.
 (pdftex.def)             Requested size: 374.86774pt x 143.60147pt.
 Package epstopdf Info: Source file: <imgs/Chap3/fig8.eps>
-(epstopdf)                    date: 2024-10-16 21:24:50
+(epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 132143 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig8-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:44
+(epstopdf)                    date: 2024-10-17 07:25:44
 (epstopdf)                    size: 46167 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig8-eps-converted-to.pdf imgs/Chap3/fig8.eps>
 (epstopdf)             \includegraphics on input line 703.
@@ -1439,10 +1434,10 @@ Package pdftex.def Info: imgs/Chap3/fig8-eps-converted-to.pdf  used on input lin
 
 [29]
 Package epstopdf Info: Source file: <imgs/Chap3/fig6.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 156212 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig6-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:47
+(epstopdf)                    date: 2024-10-17 07:25:47
 (epstopdf)                    size: 44128 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig6-eps-converted-to.pdf imgs/Chap3/fig6.eps>
 (epstopdf)             \includegraphics on input line 712.
@@ -1453,10 +1448,10 @@ File: imgs/Chap3/fig6-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/Chap3/fig6-eps-converted-to.pdf  used on input line 712.
 (pdftex.def)             Requested size: 374.86774pt x 139.65546pt.
 Package epstopdf Info: Source file: <imgs/Chap3/fig7.eps>
-(epstopdf)                    date: 2024-10-16 21:24:50
+(epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 159684 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig7-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:47
+(epstopdf)                    date: 2024-10-17 07:25:47
 (epstopdf)                    size: 43782 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig7-eps-converted-to.pdf imgs/Chap3/fig7.eps>
 (epstopdf)             \includegraphics on input line 715.
@@ -1467,10 +1462,10 @@ File: imgs/Chap3/fig7-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/Chap3/fig7-eps-converted-to.pdf  used on input line 715.
 (pdftex.def)             Requested size: 374.86774pt x 139.65546pt.
 Package epstopdf Info: Source file: <imgs/Chap3/fig5.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 167214 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig5-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:48
+(epstopdf)                    date: 2024-10-17 07:25:48
 (epstopdf)                    size: 47951 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig5-eps-converted-to.pdf imgs/Chap3/fig5.eps>
 (epstopdf)             \includegraphics on input line 718.
@@ -1486,10 +1481,10 @@ Package pdftex.def Info: imgs/Chap3/fig5-eps-converted-to.pdf  used on input lin
 
 [31 <./imgs/Chap3/fig9-eps-converted-to.pdf> <./imgs/Chap3/fig10-eps-converted-to.pdf> <./imgs/Chap3/fig8-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <imgs/Chap3/fig12.eps>
-(epstopdf)                    date: 2024-10-16 21:24:50
+(epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 152884 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig12-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:48
+(epstopdf)                    date: 2024-10-17 07:25:48
 (epstopdf)                    size: 37678 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig12-eps-converted-to.pdf imgs/Chap3/fig12.eps>
 (epstopdf)             \includegraphics on input line 748.
@@ -1500,10 +1495,10 @@ File: imgs/Chap3/fig12-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: imgs/Chap3/fig12-eps-converted-to.pdf  used on input line 748.
 (pdftex.def)             Requested size: 374.86774pt x 139.34567pt.
 Package epstopdf Info: Source file: <imgs/Chap3/fig11.eps>
-(epstopdf)                    date: 2024-10-16 21:24:50
+(epstopdf)                    date: 2024-10-16 22:24:50
 (epstopdf)                    size: 161298 bytes
 (epstopdf)             Output file: <imgs/Chap3/fig11-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:48
+(epstopdf)                    date: 2024-10-17 07:25:48
 (epstopdf)                    size: 56824 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap3/fig11-eps-converted-to.pdf imgs/Chap3/fig11.eps>
 (epstopdf)             \includegraphics on input line 751.
@@ -1814,15 +1809,15 @@ File: imgs/RobotModel.drawio.png Graphic file (type png)
 Package pdftex.def Info: imgs/RobotModel.drawio.png  used on input line 707.
 (pdftex.def)             Requested size: 308.71104pt x 226.35382pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig13.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 144865 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig13-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:50
+(epstopdf)                    date: 2024-10-17 07:25:50
 (epstopdf)                    size: 192281 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig13-eps-converted-to.pdf imgs/Chap4/fig13.eps>
 (epstopdf)             \includegraphics on input line 736.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig13-eps-converted-to.pdf, id=899, 563.10374pt x 282.05376pt>
+<imgs/Chap4/fig13-eps-converted-to.pdf, id=900, 563.10374pt x 282.05376pt>
 File: imgs/Chap4/fig13-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig13-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig13-eps-converted-to.pdf  used on input line 736.
@@ -1835,183 +1830,183 @@ Package pdftex.def Info: imgs/Chap4/fig13-eps-converted-to.pdf  used on input li
 
 [50 <./imgs/Chap4/fig13-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <imgs/Chap4/fig1.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 142565 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:51
+(epstopdf)                    date: 2024-10-17 07:25:51
 (epstopdf)                    size: 50755 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig1-eps-converted-to.pdf imgs/Chap4/fig1.eps>
 (epstopdf)             \includegraphics on input line 834.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig1-eps-converted-to.pdf, id=935, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig1-eps-converted-to.pdf, id=936, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig1-eps-converted-to.pdf  used on input line 834.
 (pdftex.def)             Requested size: 352.8155pt x 184.36646pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig2.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 158325 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig2-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:51
+(epstopdf)                    date: 2024-10-17 07:25:51
 (epstopdf)                    size: 54940 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig2-eps-converted-to.pdf imgs/Chap4/fig2.eps>
 (epstopdf)             \includegraphics on input line 837.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig2-eps-converted-to.pdf, id=936, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig2-eps-converted-to.pdf, id=937, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig2-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig2-eps-converted-to.pdf  used on input line 837.
 (pdftex.def)             Requested size: 352.8155pt x 184.36646pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig3.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 158548 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig3-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:51
+(epstopdf)                    date: 2024-10-17 07:25:51
 (epstopdf)                    size: 54542 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig3-eps-converted-to.pdf imgs/Chap4/fig3.eps>
 (epstopdf)             \includegraphics on input line 845.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig3-eps-converted-to.pdf, id=937, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig3-eps-converted-to.pdf, id=938, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig3-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig3-eps-converted-to.pdf  used on input line 845.
 (pdftex.def)             Requested size: 352.8155pt x 184.36646pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig4.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 158403 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig4-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:52
+(epstopdf)                    date: 2024-10-17 07:25:52
 (epstopdf)                    size: 55466 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig4-eps-converted-to.pdf imgs/Chap4/fig4.eps>
 (epstopdf)             \includegraphics on input line 848.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig4-eps-converted-to.pdf, id=938, 489.83pt x 255.95625pt>
+<imgs/Chap4/fig4-eps-converted-to.pdf, id=939, 489.83pt x 255.95625pt>
 File: imgs/Chap4/fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig4-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig4-eps-converted-to.pdf  used on input line 848.
 (pdftex.def)             Requested size: 352.8155pt x 184.36646pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig5.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 161447 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig5-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:52
+(epstopdf)                    date: 2024-10-17 07:25:52
 (epstopdf)                    size: 36416 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig5-eps-converted-to.pdf imgs/Chap4/fig5.eps>
 (epstopdf)             \includegraphics on input line 874.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig5-eps-converted-to.pdf, id=939, 497.86pt x 255.95625pt>
+<imgs/Chap4/fig5-eps-converted-to.pdf, id=940, 497.86pt x 255.95625pt>
 File: imgs/Chap4/fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig5-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig5-eps-converted-to.pdf  used on input line 874.
 (pdftex.def)             Requested size: 352.8155pt x 181.39041pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig6.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 259087 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig6-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:52
+(epstopdf)                    date: 2024-10-17 07:25:52
 (epstopdf)                    size: 63248 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig6-eps-converted-to.pdf imgs/Chap4/fig6.eps>
 (epstopdf)             \includegraphics on input line 877.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig6-eps-converted-to.pdf, id=940, 501.875pt x 265.99374pt>
+<imgs/Chap4/fig6-eps-converted-to.pdf, id=941, 501.875pt x 265.99374pt>
 File: imgs/Chap4/fig6-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig6-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig6-eps-converted-to.pdf  used on input line 877.
 (pdftex.def)             Requested size: 352.8155pt x 187.00203pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig7.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 235141 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig7-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:53
+(epstopdf)                    date: 2024-10-17 07:25:53
 (epstopdf)                    size: 71750 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig7-eps-converted-to.pdf imgs/Chap4/fig7.eps>
 (epstopdf)             \includegraphics on input line 885.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig7-eps-converted-to.pdf, id=941, 500.87125pt x 265.99374pt>
+<imgs/Chap4/fig7-eps-converted-to.pdf, id=942, 500.87125pt x 265.99374pt>
 File: imgs/Chap4/fig7-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig7-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig7-eps-converted-to.pdf  used on input line 885.
 (pdftex.def)             Requested size: 352.8155pt x 187.37543pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig8.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 405706 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig8-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:53
+(epstopdf)                    date: 2024-10-17 07:25:53
 (epstopdf)                    size: 122611 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig8-eps-converted-to.pdf imgs/Chap4/fig8.eps>
 (epstopdf)             \includegraphics on input line 888.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig8-eps-converted-to.pdf, id=942, 500.87125pt x 265.99374pt>
+<imgs/Chap4/fig8-eps-converted-to.pdf, id=943, 500.87125pt x 265.99374pt>
 File: imgs/Chap4/fig8-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig8-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig8-eps-converted-to.pdf  used on input line 888.
 (pdftex.def)             Requested size: 352.8155pt x 187.37543pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig16.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 355147 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig16-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:53
+(epstopdf)                    date: 2024-10-17 07:25:53
 (epstopdf)                    size: 120637 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig16-eps-converted-to.pdf imgs/Chap4/fig16.eps>
 (epstopdf)             \includegraphics on input line 896.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig16-eps-converted-to.pdf, id=943, 489.83pt x 392.46625pt>
+<imgs/Chap4/fig16-eps-converted-to.pdf, id=944, 489.83pt x 392.46625pt>
 File: imgs/Chap4/fig16-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig16-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig16-eps-converted-to.pdf  used on input line 896.
 (pdftex.def)             Requested size: 374.86774pt x 300.36145pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig9.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 217309 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig9-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:54
+(epstopdf)                    date: 2024-10-17 07:25:54
 (epstopdf)                    size: 45386 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig9-eps-converted-to.pdf imgs/Chap4/fig9.eps>
 (epstopdf)             \includegraphics on input line 921.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig9-eps-converted-to.pdf, id=944, 490.83376pt x 265.99374pt>
+<imgs/Chap4/fig9-eps-converted-to.pdf, id=945, 490.83376pt x 265.99374pt>
 File: imgs/Chap4/fig9-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig9-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig9-eps-converted-to.pdf  used on input line 921.
 (pdftex.def)             Requested size: 352.8155pt x 191.20282pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig10.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 217869 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig10-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:56
+(epstopdf)                    date: 2024-10-17 07:25:56
 (epstopdf)                    size: 47986 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig10-eps-converted-to.pdf imgs/Chap4/fig10.eps>
 (epstopdf)             \includegraphics on input line 924.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig10-eps-converted-to.pdf, id=945, 490.83376pt x 265.99374pt>
+<imgs/Chap4/fig10-eps-converted-to.pdf, id=946, 490.83376pt x 265.99374pt>
 File: imgs/Chap4/fig10-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig10-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig10-eps-converted-to.pdf  used on input line 924.
 (pdftex.def)             Requested size: 352.8155pt x 191.20282pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig12.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 304113 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig12-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:54
+(epstopdf)                    date: 2024-10-17 07:25:54
 (epstopdf)                    size: 102523 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig12-eps-converted-to.pdf imgs/Chap4/fig12.eps>
 (epstopdf)             \includegraphics on input line 932.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig12-eps-converted-to.pdf, id=946, 502.87875pt x 258.9675pt>
+<imgs/Chap4/fig12-eps-converted-to.pdf, id=947, 502.87875pt x 258.9675pt>
 File: imgs/Chap4/fig12-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig12-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig12-eps-converted-to.pdf  used on input line 932.
 (pdftex.def)             Requested size: 352.8155pt x 181.68695pt.
 Package epstopdf Info: Source file: <imgs/Chap4/fig11.eps>
-(epstopdf)                    date: 2024-10-16 21:24:48
+(epstopdf)                    date: 2024-10-16 22:24:48
 (epstopdf)                    size: 831923 bytes
 (epstopdf)             Output file: <imgs/Chap4/fig11-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-10-17 06:25:57
+(epstopdf)                    date: 2024-10-17 07:25:57
 (epstopdf)                    size: 152051 bytes
 (epstopdf)             Command: <repstopdf --outfile=imgs/Chap4/fig11-eps-converted-to.pdf imgs/Chap4/fig11.eps>
 (epstopdf)             \includegraphics on input line 935.
 Package epstopdf Info: Output file is already uptodate.
-<imgs/Chap4/fig11-eps-converted-to.pdf, id=947, 490.83376pt x 265.99374pt>
+<imgs/Chap4/fig11-eps-converted-to.pdf, id=948, 490.83376pt x 265.99374pt>
 File: imgs/Chap4/fig11-eps-converted-to.pdf Graphic file (type pdf)
 <use imgs/Chap4/fig11-eps-converted-to.pdf>
 Package pdftex.def Info: imgs/Chap4/fig11-eps-converted-to.pdf  used on input line 935.
@@ -2090,7 +2085,7 @@ Missing character: There is no ® in font uwmj00!
 [74] (./Dissertation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-11-02>
+L3 programming layer <2024-12-09>
  ***********
 
 
@@ -2099,18 +2094,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18140 strings out of 473330
- 308372 string characters out of 5719762
- 721096 words of memory out of 5000000
- 40625 multiletter control sequences out of 15000+600000
- 590787 words of font info for 151 fonts, out of 8000000 for 9000
+ 18154 strings out of 473254
+ 308589 string characters out of 5717955
+ 721784 words of memory out of 5000000
+ 40708 multiletter control sequences out of 15000+600000
+ 592731 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,29n,79p,1597b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Dissertation.pdf (85 pages, 5403137 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbf.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Dissertation.pdf (85 pages, 5880798 bytes).
 PDF statistics:
- 1632 PDF objects out of 1728 (max. 8388607)
- 1356 compressed objects within 14 object streams
+ 1668 PDF objects out of 1728 (max. 8388607)
+ 1378 compressed objects within 14 object streams
  336 named destinations out of 1000 (max. 500000)
  564 words of extra memory for PDF output out of 10000 (max. 10000000)
 

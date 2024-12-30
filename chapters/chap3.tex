@@ -10,7 +10,7 @@
 \section{Introduction} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this chapter, a novel constrained optimization-based neuro-adaptive control (CoNAC) is presented for uncertain Euler-Lagrange systems with a weight norm constraint. 
+In this chapter, a novel constrained optimization-based neuro-adaptive control (Co\allowbreak NAC) is presented for uncertain Euler-Lagrange systems with a weight norm constraint. 
 As presented in Section \ref{chap1:sec:example}, one of the common issues in neuro-adaptive control (NAC) is that the boundedness of neural network’s (NN) weights is not guaranteed.
 Since the amplitude of control input of NAC is dependent on the weights, the unbounded weights may lead to instability and severe safety issues. 
 The satisfaction of the boundedness of the weights are reformulated into weight norm constraints, which are then incorporated into the CoNAC.
@@ -273,7 +273,7 @@ where $\alpha\in\R_{>0}$ denotes the adaptation gain (also known as learning rat
 The Lagrange multipliers associated with inequality constraints are non-negative.
 When a constraint $c_j$ becomes active (\ie violated), the corresponding Lagrange multiplier $\lambda_j$ increases from zero to address the violation by adjusting the weights' adaptation direction $\dot{\hat\theta}$. 
 Once the violation is resolved and the constraint is no longer active (\ie $c_j < 0$), the multiplier decreases gradually until it returns to zero. 
-Note that this adaption law is similar to the augmented Lagrangian method (ALM) in \cite{RN22}, where the adaptation law for Lagrange multipliers is given by $\lambda_j\leftarrow \text{max}(\lambda_j-c_j/\mu,0)$, with $\mu\in\R_{>0}$ being the penalty parameter. 
+Note that this adaption law is similar to the augmented Lagrangian method (ALM) in \cite{RN9}, where the adaptation law for Lagrange multipliers is given by $\lambda_j\leftarrow \text{max}(\lambda_j-c_j/\mu,0)$, with $\mu\in\R_{>0}$ being the penalty parameter. 
     
 At steady state, where $\dot{\hat\theta}=0$ and $\dot\lambda_j=0$, the KKT conditions defined in Theorem \ref{chap2:thm:KKT}, are satisfied, \ie $\partial L/\partial \hat\theta=0$, $c_j \le 0$, $\lambda_j \ge 0$, and $\lambda_j c_j=0$.
 In other words, the proposed optimizer updates the SHLNN weights and Lagrange multipliers in a way that satisfies the KKT conditions. 
